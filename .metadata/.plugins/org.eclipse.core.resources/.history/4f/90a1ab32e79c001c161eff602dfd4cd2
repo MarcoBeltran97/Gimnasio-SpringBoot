@@ -1,0 +1,13 @@
+package com.init.gimnasio.modelo;
+
+public class Producto {
+	private int id;
+	private int cliente;
+	private String tipo_producto;
+	private String nombre_producto;
+	private String descripcion;
+	private int cantidad;
+	private double precio_uni;
+	private double precio_total;
+
+}

@@ -1,0 +1,11 @@
+package com.init.gimnasio.interfazServicio;
+
+import java.util.List;
+
+import com.init.gimnasio.modelo.Producto;
+
+public interface IProductoService {
+	
+	public List<Producto> listar();
+
+}
