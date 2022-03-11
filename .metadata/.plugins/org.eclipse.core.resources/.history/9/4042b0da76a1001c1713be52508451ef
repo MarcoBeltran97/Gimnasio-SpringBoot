@@ -1,0 +1,5 @@
+package com.init.gimnasio.servicio;
+
+public class LoginService {
+
+}

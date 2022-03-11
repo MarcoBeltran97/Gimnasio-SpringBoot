@@ -1,6 +1,13 @@
 create database GYM;
 use GYM;
 
+/*USUARIO*/
+CREATE TABLE login(
+id int primary key not null auto_increment,
+username varchar(70),
+password varchar(20)
+);
+
 /*TABLAS*/
 create table cliente
 (

@@ -33,11 +33,14 @@
 					<td th:text="${producto.precio_total}"></td>
 					<td>
 						<a th:href="@{/editar/}+${producto.id}" class="btn btn-warning">EDITAR</a>
-						<a th:href="@{/delete/}+${producto.id}" class="btn btn-danger">ELIMINAR</a>
+						<a th:onclick="eliminar([[${producto.id}]])" class="btn btn-danger">ELIMINAR</a>
 					</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="/JS/functions.js"></script>
 </body>
 </html>

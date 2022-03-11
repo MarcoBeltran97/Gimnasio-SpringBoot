@@ -1,0 +1,11 @@
+package com.init.gimnasio.interfazServicio;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.init.gimnasio.modelo.Login;
+
+@Repository
+public interface ILoginService extends JpaRepository<Login, Long> {
+
+}
