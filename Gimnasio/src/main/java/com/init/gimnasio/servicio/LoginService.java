@@ -16,5 +16,5 @@ public class LoginService {
 		Login usuarioservice = repo.findByUsernameAndPassword(usu, pass);
 		return usuarioservice;
 	}
-
+	
 }

@@ -1,0 +1,43 @@
+package com.init.gimnasio.servicio;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.init.gimnasio.interfaces.ICliente;
+import com.init.gimnasio.interfazServicio.IClienteService;
+import com.init.gimnasio.modelo.Login;
+
+@Service
+public class ClienteService implements IClienteService {
+
+	@Autowired
+	private ICliente icliente;
+	
+	@Override
+	public List<Login> listar() {
+		return (List<Login>)icliente.findAll();
+	}
+
+	@Override
+	public Optional<Login> listarId(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int save(Login c) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}
