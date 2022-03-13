@@ -32,6 +32,6 @@
     <fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
     <fullyQualifiedTypeName name="com.init.gimnasio.interfaces.ICliente"/>
     <fullyQualifiedTypeName name="java.lang.Long"/>
-    <fullyQualifiedTypeName name="com.init.gimnasio.interfazServicio.IClienteService"/>
     <fullyQualifiedTypeName name="com.init.gimnasio.modelo.Login"/>
+    <fullyQualifiedTypeName name="com.init.gimnasio.interfazServicio.IClienteService"/>
 </qualifiedTypeNameHistroy>
