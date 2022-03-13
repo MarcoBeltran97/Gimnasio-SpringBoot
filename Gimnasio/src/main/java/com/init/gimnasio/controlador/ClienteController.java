@@ -33,11 +33,11 @@ public class ClienteController {
 		return "Index";
 	}
 	
-	/*@PostMapping("/index")
+	@PostMapping("/index")
 	public String save(@Validated Login c, Model model) {
 		service.save(c);
 		return "redirect:/shop";
-	}*/
+	}
 	
 	/*@GetMapping("/editar/{id}")
 	public String editar(@PathVariable int id, Model model) {

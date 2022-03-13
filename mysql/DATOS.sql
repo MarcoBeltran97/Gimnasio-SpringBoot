@@ -9,5 +9,6 @@ insert into producto (cliente, tipo_producto, nombre_producto, descripcion, cant
 
 INSERT INTO usuario (nombre_completo, apellidos, dni, direccion, ciudad, celular, username, password) VALUES ("Marco Antonio", "Beltran", "98984510", "Delegados", "Lima", "987987987", "MARCO", "1234");
 
-
+SELECT * FROM usuario;
+SELECT * FROM producto;
 

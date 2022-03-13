@@ -24,7 +24,6 @@ nombre_producto varchar(30) not null,
 descripcion varchar(100) not null,
 cantidad int not null,
 precio_uni decimal(10,2) not null,
-estado int default 1,
 primary key (idproducto)
 );
 

@@ -12,43 +12,33 @@ public class Producto {
 	/*Indicamos como parametro que el id de la tabla cliente*/
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	private int cliente;
+	private int idproducto;
 	private String tipo_producto;
 	private String nombre_producto;
 	private String descripcion;
 	private int cantidad;
 	private double precio_uni;
-	private double precio_total;
 	
 	public Producto() {
 		super();
 	}
 	
-	public Producto(int id, int cliente, String tipo_producto, String nombre_producto, String descripcion, int cantidad,
-			double precio_uni, double precio_total) {
+	public Producto(int idproducto, String tipo_producto, String nombre_producto, String descripcion, int cantidad,
+			double precio_uni) {
 		super();
-		this.id = id;
-		this.cliente = cliente;
+		this.idproducto = idproducto;
 		this.tipo_producto = tipo_producto;
 		this.nombre_producto = nombre_producto;
 		this.descripcion = descripcion;
 		this.cantidad = cantidad;
 		this.precio_uni = precio_uni;
-		this.precio_total = precio_total;
 	}
 	
-	public int getId() {
-		return id;
+	public int getIdproducto() {
+		return idproducto;
 	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public int getCliente() {
-		return cliente;
-	}
-	public void setCliente(int cliente) {
-		this.cliente = cliente;
+	public void setIdproducto(int idproducto) {
+		this.idproducto = idproducto;
 	}
 	public String getTipo_producto() {
 		return tipo_producto;
@@ -80,11 +70,5 @@ public class Producto {
 	public void setPrecio_uni(double precio_uni) {
 		this.precio_uni = precio_uni;
 	}
-	public double getPrecio_total() {
-		return precio_total;
-	}
-	public void setPrecio_total(double precio_total) {
-		this.precio_total = precio_total;
-	}
-	
+		
 }
