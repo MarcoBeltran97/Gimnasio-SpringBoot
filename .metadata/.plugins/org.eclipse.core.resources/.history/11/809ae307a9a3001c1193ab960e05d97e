@@ -1,0 +1,60 @@
+package com.init.gimnasio.controlador;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.init.gimnasio.interfaces.IProducto;
+import com.init.gimnasio.modelo.Producto;
+
+@Controller
+public class Mant_ProductoController {
+	
+	@Autowired
+	private IProducto iproducto;
+	
+	@GetMapping("/mantproducto")
+	public String agregar(Model model) {
+		model.addAttribute("producto", new Producto());
+		return "Mant_Producto";
+	}
+	
+	/*@PostMapping("/mantproducto")
+	public String saveMantProducto(@Validated Producto p, Model model) {
+		iproducto.save(p);
+		return "redirect:/mantproducto";
+	}*/
+	
+	/*Foto*/
+	@PostMapping("/mantproducto")
+	public String guardar(@RequestParam(name = "file", required = false) MultipartFile foto, Producto producto, RedirectAttributes flash) {
+		
+		if(foto.isEmpty()) {
+			String ruta = "C://imagenes";
+			
+			try {
+				byte[] bytes = foto.getBytes();
+				Path rutaAbsoluta = Paths.get(ruta + "//" + foto.getOriginalFilename());
+				Files.write(rutaAbsoluta, bytes);
+				producto.setImagen_producto(foto.getOriginalFilename());
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			iproducto.save(producto);
+			flash.addFlashAttribute("success", "Foto Subida");
+		}
+		
+		return "redirect:/shop";
+	}
+
+}

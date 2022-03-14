@@ -6,46 +6,30 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class="container mt-4">		
-			<div class="col-sm-6">
-			<form th:action="@{/shop}" th:object=${producto} method="POST">
-				<div class="card">
-					<div class="card-header">
-						<h3>Modulo Compras</h3>
-					</div>
-					<div class="card-body">
-						<div class="form-group">
-							<label>ID</label>
-							<input th:field="*{idproducto}" type="text" class="form-control">
-						</div>
-						<div class="form-group">
-							<label>TIPO PRODUCTO</label>
-							<input th:field="*{tipo_producto}" type="text" class="form-control">
-						</div>
-						<div class="form-group">
-							<label>NOMBRE</label>
-							<input th:field="*{nombre_producto}" type="text" class="form-control">
-						</div>
-						<div class="form-group">
-							<label>DESCRIPCION</label>
-							<input th:field="*{descripcion}" type="text" class="form-control">
-						</div>
-						<div class="form-group">
-							<label>CANTIDAD</label>
-							<input th:field="*{cantidad}" type="text" class="form-control">
-						</div>
-						<div class="form-group">
-							<label>PRECIO UNITARIO</label>
-							<input th:field="*{precio_uni}" type="text" class="form-control">
-						</div>						
-						<div class="card-footer">
-							<input type="submit" value="Guardar" class="btn btn-success">
+	<!-- Mostramos en un div con la clase Card de Bootstrap para poder subir la iamgen y los demas valores en la BD -->
+	<div class="container mt-4">
+	<a th:href="@{/shop}" class="btn btn-primary">Nuevo</a>
+		<table class="table">
+			<tbody>
+				<tr th:each="producto:${productos}">
+					<div>
+						<div class="card" style="width: 18rem;">
+						  <img th:src="*{'data:image/jpeg;base64,'+{producto.imagen_producto}}" class="card-img-top">
+						  <div class="card-body">
+						  	<h7 th:text="${producto.tipo_producto}" class="card-title"></h7>
+						    <h5 th:text="${producto.nombre_producto}" class="card-title"></h5>
+						    <p th:text="${producto.descripcion}" class="card-text"></p>
+						    <a href="#" class="btn btn-primary">AGREGAR</a>
+						  </div>
 						</div>
 					</div>
-					<div class="card-footer"></div>
-				</div>
-			</form>			
-		</div>	
+				</tr>
+			</tbody>
+		</table>
 	</div>
+
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="/JS/functions.js"></script>
 </body>
 </html>

@@ -1,10 +1,14 @@
 package com.init.gimnasio.servicio;
 
+import java.io.IOException;
+import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.init.gimnasio.interfaces.IProducto;
 import com.init.gimnasio.interfazServicio.IProductoService;
@@ -39,6 +43,32 @@ public class ProductoService implements IProductoService {
 	@Override
 	public void delete(int id) {
 		iproducto.deleteById(id);
+	}
+	
+	/*Empezamos a implementar el metodo donde recogeremos y enviaremos por parametro cada valor de la interfaz del producto servicio*/
+	public void guardarProductoBD(MultipartFile file, String tipo_producto, String nombre_producto, String descripcion, int cantidad, double precio_uni) {
+		
+		Producto p = new Producto();
+		String fileName = StringUtils.cleanPath(file.getOriginalFilename());
+		
+		if(fileName.contains("..")) {
+			System.out.println("Archivo no valido");
+		}
+		
+		try {
+			p.setImagen_producto(Base64.getEncoder().encodeToString(file.getBytes()));
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+		
+		p.setTipo_producto(tipo_producto);
+		p.setNombre_producto(nombre_producto);
+		p.setDescripcion(descripcion);
+		p.setCantidad(cantidad);
+		p.setPrecio_uni(precio_uni);
+		
+		iproducto.save(p);
+
 	}
 
 }

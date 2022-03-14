@@ -1,0 +1,14 @@
+package com.init.gimnasio.controlador;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class Mant_ProductoController {
+	
+	@GetMapping("/")
+	public String form() {
+		return "Mant_Producto";
+	}
+
+}

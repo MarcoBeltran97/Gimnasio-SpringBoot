@@ -15,15 +15,15 @@ username varchar(70)  not null unique,
 password varchar(20) not null
 );
 
-
 create table producto
 (
 idproducto int not null auto_increment,
-tipo_producto varchar(30) not null,
-nombre_producto varchar(30) not null,
-descripcion varchar(100) not null,
+tipo_producto varchar(30) null,
+imagen_producto mediumblob,
+nombre_producto varchar(30) null,
+descripcion varchar(100) null,
 cantidad int not null,
-precio_uni decimal(10,2) not null,
+precio_uni decimal(10,2) null,
 primary key (idproducto)
 );
 
