@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.init.gimnasio.interfazServicio.IClienteService;
@@ -37,19 +38,35 @@ public class LoginController {
 		return login;
 	}
 	
-	@GetMapping("/portada")
-	public String logeo(Model model) {
-		model.addAttribute("login", new Login());
+	/*Envio de la solicitud mediante el request para la obtencion del input*/
+	/*@GetMapping("/portada")
+	public String logeo(HttpServletRequest request, Model model) {
+		String usuariologeo = request.getParameter("txtusuario");
+		model.addAttribute("usuariologin", usuariologeo);
 		return "Portada";
-	}
+	}*/	
 	
 	@PostMapping("/login")
+	public String login(@RequestParam(name="username", required = false) String usuariologeo, Model model, @ModelAttribute("usuario") Login usuario) {
+		Login loginuser = loginservicio.login(usuario.getUsername(), usuario.getPassword());
+		model.addAttribute("usuariologin", "Bienvenido: "+usuariologeo);
+		System.out.print(loginuser);
+		
+		if(Objects.nonNull(loginuser)) {
+			return "Portada";
+		}
+		else{
+			return "redirect:/login";
+		}
+	}
+	
+	
+	/*Validacion de Inicio de Sesion normal, sin enviar un atributo*/
+	/*@PostMapping("/login")
 	public String login(@ModelAttribute("usuario") Login usuario) {
 		Login loginuser = loginservicio.login(usuario.getUsername(), usuario.getPassword());
-		//Login userindex = loginservicio.inicio(usuario.getUsername());
 		
 		System.out.print(loginuser);
-		//System.out.print(userindex);
 		
 		if(Objects.nonNull(loginuser)) {
 			return "redirect:/portada";
@@ -57,7 +74,8 @@ public class LoginController {
 		else{
 			return "redirect:/login";
 		}
-	}
+	}*/
+	
 	
 	/*@GetMapping("/portada/{id}")
 	public String inicio(@PathVariable int id, Model model) {
