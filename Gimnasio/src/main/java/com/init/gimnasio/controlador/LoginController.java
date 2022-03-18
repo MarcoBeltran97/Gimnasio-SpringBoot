@@ -43,11 +43,19 @@ public class LoginController {
 	@PostMapping("/login")
 	public String login(@RequestParam(name="username", required = false) String usuariologeo, Model model, @ModelAttribute("usuario") Login usuario) {
 		Login loginuser = loginservicio.login(usuario.getUsername(), usuario.getPassword());
+<<<<<<< HEAD
 		model.addAttribute("usuariologin", usuariologeo);
 		System.out.print(loginuser);
 		
 		if(Objects.nonNull(loginuser)) {
 			return "redirect:/shop";
+=======
+		model.addAttribute("usuariologin", "Bienvenido: "+usuariologeo);
+		System.out.print(loginuser);
+		
+		if(Objects.nonNull(loginuser)) {
+			return "Portada";
+>>>>>>> d169ce6bc648b3c3dd6fd124ca7415afcfd9745d
 		}
 		else{
 			return "redirect:/login";
@@ -68,6 +76,17 @@ public class LoginController {
 		else{
 			return "redirect:/login";
 		}
+<<<<<<< HEAD
+=======
+	}*/
+	
+	
+	/*@GetMapping("/portada/{id}")
+	public String inicio(@PathVariable int id, Model model) {
+		Optional<Login>cliente = clienteservicio.listarId(id);
+		model.addAttribute("cliente", cliente);
+		return "Portada";
+>>>>>>> d169ce6bc648b3c3dd6fd124ca7415afcfd9745d
 	}*/
 	
 	
