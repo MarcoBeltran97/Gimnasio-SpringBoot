@@ -37,11 +37,10 @@ public class Mant_ProductoController {
 			@RequestParam("txttipo_producto") String tipo_producto,
 			@RequestParam("txtnombre_producto") String nombre_producto,
 			@RequestParam("txtdescripcion") String descripcion,
-			@RequestParam("txtcantidad") int cantidad,
 			@RequestParam("txtprecio_uni") double precio_uni			
 			)
 	{
-		productoservice.guardarProductoBD(file, tipo_producto, nombre_producto, descripcion, cantidad, precio_uni);
+		productoservice.guardarProductoBD(file, tipo_producto, nombre_producto, descripcion, precio_uni);
 		return "redirect:/shop";
 	}
 

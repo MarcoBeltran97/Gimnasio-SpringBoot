@@ -20,16 +20,15 @@
 			</tr>
 		</thead>
 			<tbody>
-				<tr th:each="producto:${productos}">
+				<tr th:each="producto:${productoscliente}">
 					<td th:text="${producto.idproducto}"></td>
 					<td th:text="${producto.tipo_producto}"></td>
 					<td th:text="${producto.nombre_producto}"></td>
 					<td th:text="${producto.descripcion}"></td>
-					<td th:text="${producto.cantidad}"></td>
 					<td th:text="${producto.precio_uni}"></td>
 					<td>
 						<a th:href="@{/editar/}+${producto.idproducto}" class="btn btn-warning">EDITAR</a>
-						<a th:onclick="eliminar([[${producto.idproducto}]])" class="btn btn-danger">ELIMINAR</a>
+						<a th:onclick="eliminarProducto([[${producto.idproducto}]])" class="btn btn-danger">ELIMINAR</a>
 					</td>
 				</tr>
 			</tbody>

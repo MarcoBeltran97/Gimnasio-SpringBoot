@@ -1,0 +1,9 @@
+.contenedor{
+  display: flex;
+  gap:20px
+}
+
+.contenedor-productos{
+	width: 90%;
+	display: flex;
+}
