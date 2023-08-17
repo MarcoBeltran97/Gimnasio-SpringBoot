@@ -1,0 +1,9 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(../img/portadalogin.jpg);
+}
+
+.contenedor {    
+    background-image: url("../img/portadalogin.jpg");
+}

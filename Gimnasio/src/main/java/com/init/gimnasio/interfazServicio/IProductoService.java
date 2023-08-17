@@ -15,6 +15,6 @@ public interface IProductoService {
 	public void delete(int id);
 	
 	/*Metodo para guardar los valores con la imagen, enviando todos los parametros*/
-	public void guardarProductoBD(MultipartFile file, String tipo_producto, String nombre_producto, String descripcion, int cantidad, double precio_uni);
+	public void guardarProductoBD(MultipartFile file, String tipo_producto, String nombre_producto, String descripcion, double precio_uni);
 
 }

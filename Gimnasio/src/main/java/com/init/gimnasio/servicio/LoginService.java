@@ -12,7 +12,7 @@ public class LoginService {
 	@Autowired
 	private ILogin repo;
 	
-	public Login login(String usu, String pass) {
+	public Login loginusuario(String usu, String pass) {
 		Login usuarioservice = repo.findByUsernameAndPassword(usu, pass);
 		return usuarioservice;
 	}

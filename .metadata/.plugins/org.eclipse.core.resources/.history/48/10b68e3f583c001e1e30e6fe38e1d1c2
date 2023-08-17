@@ -1,0 +1,46 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(../img/portadalogin.jpg);
+}
+
+.contenedor {
+    
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    }
+    
+    /* .contenedor:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(235, 241, 241, 0.5);
+    filter: blur(10px);
+    margin: -30px;
+    }  */
+    /* .contenedor {
+        margin-left: 350px;
+
+        border-radius: 20px;
+        box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
+        padding: 25px;
+        position: absolute;
+        font-size: 20px;
+        color: #000;
+        text-align: center;
+        font-weight: 900;
+      } */

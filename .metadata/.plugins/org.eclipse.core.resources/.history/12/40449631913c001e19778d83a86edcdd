@@ -1,0 +1,59 @@
+package com.init.gimnasio.servicio;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.init.gimnasio.interfaces.IProductoCliente;
+import com.init.gimnasio.interfazServicio.IProductoClienteService;
+import com.init.gimnasio.modelo.Detalle_Compra;
+
+@Service
+public class DetalleCompraService implements IProductoClienteService {
+
+	@Autowired
+	private IProductoCliente iproductocliente;
+
+	
+	@Override
+	public List<Detalle_Compra> listarProducto() {
+		return (List<Detalle_Compra>)iproductocliente.findAll();
+	}
+
+	@Override
+	public Optional<Detalle_Compra> listarProductoId(int id) {
+		return iproductocliente.findById(id);
+	}
+
+	@Override
+	public int saveproducto(Detalle_Compra p) {
+		int res = 0;
+		Detalle_Compra producto = iproductocliente.save(p);
+		if(!producto.equals(null)) {
+			res = 1;
+		}
+		return res;
+	}
+
+	@Override
+	public void deleteproducto(int id) {
+		iproductocliente.deleteById(id);
+	}
+	
+	/*Empezamos a implementar el metodo donde recogeremos y enviaremos por parametro cada valor de la interfaz del producto servicio*/
+	public void guardarProductoCliente(String tipo_producto, String nombre_producto, String descripcion, double precio_uni) {
+		
+		Detalle_Compra p = new Detalle_Compra();
+		
+		p.setUsuario(tipo_producto);
+		p.setProducto(nombre_producto);
+		p.setCantidad(descripcion);
+		p.setMonto_total(precio_uni);
+		
+		iproductocliente.save(p);
+
+	}
+
+}

@@ -46,7 +46,7 @@ public class ProductoService implements IProductoService {
 	}
 	
 	/*Empezamos a implementar el metodo donde recogeremos y enviaremos por parametro cada valor de la interfaz del producto servicio*/
-	public void guardarProductoBD(MultipartFile file, String tipo_producto, String nombre_producto, String descripcion, int cantidad, double precio_uni) {
+	public void guardarProductoBD(MultipartFile file, String tipo_producto, String nombre_producto, String descripcion, double precio_uni) {
 		
 		Producto p = new Producto();
 		String fileName = StringUtils.cleanPath(file.getOriginalFilename());
@@ -64,7 +64,6 @@ public class ProductoService implements IProductoService {
 		p.setTipo_producto(tipo_producto);
 		p.setNombre_producto(nombre_producto);
 		p.setDescripcion(descripcion);
-		p.setCantidad(cantidad);
 		p.setPrecio_uni(precio_uni);
 		
 		iproducto.save(p);

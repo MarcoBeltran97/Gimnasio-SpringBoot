@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+}
+.logo-empresa{
+    width: 150px;
+    height: 140px;
+    margin-left: 60px;
+    border-radius: 50%;
+ border-top: 2px solid black;
+}
+body {
+    margin: 0;
+background-color: rgb(241, 240, 240);
+}
+
+.main--header{
+    padding: 0 20px;
+
+}
+.main--header_title{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+.main-nav{
+    display: none;
+}
+.main--header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-menu {
+    font-size: 1.5em;
+    border: 1px solid black;
+    display: block;
+    padding: 10px 15px;
+
+}
+.main--header_btn {
+    display: block;
+    padding: 10px 30px;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.main-header_input{
+    display: block;
+    padding: 10px;
+}
+.contenedor {
+    display: grid;
+   
+    grid-template-columns: repeat(3, 300px);
+    gap:10px
+   
+}
+/*---------------------------------------SLIDER*------------------------------------------------------------*-------------------------------*/
+
+/**/
+
+a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+   
+}
+.navbar-design{
+    box-shadow: 5px 5px 10px #fff;
+    padding-bottom: 0px;
+    background:green ;
+    background: linear-gradient(30deg,red, #fff) ;
+
+}
+
+.nav-link {
+    color: black !important;
+    font-size: 15px;
+}
+
+/*Stilos productos*/
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+.producto{
+
+    border: 2px solid black;
+    padding: 20px;
+
+}
+.btn_editar{
+    width: 150px;
+    margin-top: 10px;
+}
+
+.card-body button {
+    color: white;
+ 
+}
+.horarios_p li {
+    color: white !important;
+}
+/*CARD*/
+.card {
+    border: none;
+       border-radius: 20px;
+}
+
+/*REDES*/
+.sticky-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:230px;
+    width:210px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-color:#fff;
+    color:#efefef;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.sticky li:hover{
+    margin-left:-115px;
+}
+.sticky li img{
+    float:left;
+    margin:5px 4px;
+    margin-right:5px;
+}
+.sticky li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+}
+.sticky li p a{
+    text-decoration:none;
+    color:#2C3539;
+}
+.sticky li p a:hover{
+    text-decoration:underline;
+}
+#spopup{
+    background:#f3f3f3;
+    border-radius:9px;
+    -moz-border-radius:9px;
+    -webkit-border-radius:9px;
+    -moz-box-shadow:inset 0 0 3px #333;
+    -webkit-box-shadow:inset 0 0 3px #333;
+    box-shadow:inner 0 0 3px #333;
+    padding:12px 14px 12px 14px;
+    width:300px;
+    position:fixed;
+    bottom:13px;
+    right:2px;
+    display:none;
+    z-index:90;
+}
+
+  
+  .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /*MOVIL*/
+  @media only screen and (max-width: 767px) {
+    .comprar-movil {
+        background-color: blue !important;
+        margin-right: 70px;
+    }
+
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .comprar-movil {
+        background-color: blue !important;
+        margin-right: 150px;
+    }
+
+  }

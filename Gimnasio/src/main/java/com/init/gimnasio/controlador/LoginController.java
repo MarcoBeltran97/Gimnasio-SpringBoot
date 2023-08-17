@@ -1,7 +1,6 @@
 package com.init.gimnasio.controlador;
 
 import java.util.Objects;
-import java.util.Optional;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,13 +10,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.init.gimnasio.interfazServicio.IClienteService;
 import com.init.gimnasio.modelo.Login;
 import com.init.gimnasio.servicio.LoginService;
 
@@ -27,44 +25,40 @@ public class LoginController {
 	@Autowired
 	private LoginService loginservicio;
 	
-	@Autowired
-	private IClienteService clienteservicio;
-	
+	/**/
 	@GetMapping("/login")
-	public ModelAndView Login() {
-		ModelAndView login = new ModelAndView("login");
-		login.addObject("usuario", new Login());
-		return login;
+	public String login (Model model) {
+		model.addAttribute("usuario", new Login());
+		return "login";
 	}
 	
-	@GetMapping("/portada")
-	public String logeo(Model model) {
-		model.addAttribute("login", new Login());
-		return "Portada";
-	}
+	/*@PostMapping("/login")
+	public ModelAndView Resultado(@ModelAttribute("usuario") Login usuario) {
+		ModelAndView nav = new ModelAndView("Productos");
+		nav.addObject("usuario",usuario);
+		return nav;		
+	}*/
 	
 	@PostMapping("/login")
-	public String login(@ModelAttribute("usuario") Login usuario) {
-		Login loginuser = loginservicio.login(usuario.getUsername(), usuario.getPassword());
-		//Login userindex = loginservicio.inicio(usuario.getUsername());
-		
-		System.out.print(loginuser);
-		//System.out.print(userindex);
+	public String login(
+			@RequestParam(name="idusuario", required = false) String idusuario,			
+			@RequestParam(name="username", required = false) String username, Model model,
+			@ModelAttribute("usuario") Login usuario) {
+		Login loginuser = loginservicio.loginusuario(usuario.getUsername(), usuario.getPassword());
 		
 		if(Objects.nonNull(loginuser)) {
-			return "redirect:/portada";
+			System.out.print("loginuser usuario id: "+loginuser.getIdusuario()+"\n");
+			System.out.print("loginuser correo: "+loginuser.getUsername()+"\n");
+			
+			model.addAttribute("idusuario", loginuser.getIdusuario());
+			model.addAttribute("username", loginuser.getUsername());
+			return "redirect:/shop";
 		}
 		else{
 			return "redirect:/login";
 		}
-	}
+	}		
 	
-	/*@GetMapping("/portada/{id}")
-	public String inicio(@PathVariable int id, Model model) {
-		Optional<Login>cliente = clienteservicio.listarId(id);
-		model.addAttribute("cliente", cliente);
-		return "Portada";
-	}*/
 	
 	@RequestMapping(value = {"/logout"}, method = RequestMethod.POST)
 	public String logoutDo(HttpServletRequest request, HttpServletResponse response) {

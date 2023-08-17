@@ -22,7 +22,6 @@ public class Producto {
 	private String imagen_producto;
 	private String nombre_producto;
 	private String descripcion;
-	private int cantidad;
 	private double precio_uni;
 	
 	public Producto() {
@@ -30,14 +29,13 @@ public class Producto {
 	}
 	
 	public Producto(int idproducto, String tipo_producto, String imagen_producto, String nombre_producto,
-			String descripcion, int cantidad, double precio_uni) {
+			String descripcion, double precio_uni) {
 		super();
 		this.idproducto = idproducto;
 		this.tipo_producto = tipo_producto;
 		this.imagen_producto = imagen_producto;
 		this.nombre_producto = nombre_producto;
 		this.descripcion = descripcion;
-		this.cantidad = cantidad;
 		this.precio_uni = precio_uni;
 	}
 	
@@ -70,12 +68,6 @@ public class Producto {
 	}
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
-	}
-	public int getCantidad() {
-		return cantidad;
-	}
-	public void setCantidad(int cantidad) {
-		this.cantidad = cantidad;
 	}
 	public double getPrecio_uni() {
 		return precio_uni;

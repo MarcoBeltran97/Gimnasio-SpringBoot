@@ -8,38 +8,37 @@ import org.springframework.stereotype.Service;
 
 import com.init.gimnasio.interfaces.ICliente;
 import com.init.gimnasio.interfazServicio.IClienteService;
-import com.init.gimnasio.modelo.Login;
+import com.init.gimnasio.modelo.Cliente;
 
 @Service
 public class ClienteService implements IClienteService {
 
 	@Autowired
 	private ICliente icliente;
-	
+
 	@Override
-	public List<Login> listar() {
-		return (List<Login>)icliente.findAll();
+	public List<Cliente> listar() {
+		return (List<Cliente>)icliente.findAll();
 	}
 
 	@Override
-	public Optional<Login> listarId(int id) {
-		return icliente.findById(id);
+	public Optional<Cliente> listarcliente(String username) {
+		return icliente.findById(username);
 	}
 
 	@Override
-	public int save(Login c) {
-		int res = 0;
-		Login login = icliente.save(c);
-		if(!login.equals(null)) {
-			res = 1;
+	public int savecliente(Cliente c) {
+		int resp = 0;
+		Cliente cliente = icliente.save(c);
+		if(!cliente.equals(null)) {
+			resp = 1;			
 		}
-		return res;
+		return resp;
 	}
 
 	@Override
-	public void delete(int id) {
-		icliente.deleteById(id);
+	public void deletecliente(String username) {
+		icliente.deleteById(username);		
 	}
 	
-
 }

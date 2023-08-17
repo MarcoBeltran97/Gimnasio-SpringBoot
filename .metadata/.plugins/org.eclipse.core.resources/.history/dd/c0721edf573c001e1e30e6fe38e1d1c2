@@ -1,0 +1,17 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(../img/portadalogin.jpg);
+}
+
+.contenedor {
+    
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    }
