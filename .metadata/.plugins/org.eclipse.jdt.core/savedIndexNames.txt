@@ -38,6 +38,7 @@ INDEX VERSION 1.131+C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\.m
 3629287557.index
 3404939943.index
 3801883489.index
+<<<<<<< HEAD
 1681162599.index
 2026636786.index
 3908339760.index
@@ -54,6 +55,14 @@ INDEX VERSION 1.131+C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\.m
 3540786771.index
 790773915.index
 3502695958.index
+=======
+2372984122.index
+121124351.index
+3307202326.index
+3131527025.index
+3908339760.index
+3809767345.index
+>>>>>>> a233689389d1144e4f7249b103394cf42e7c7698
 2074584888.index
 772117566.index
 2299833318.index

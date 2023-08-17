@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card-tipoproducto{
+    /*font-family: 'League Gothic', sans-serif;*/
+    margin: 0px;
+    padding: 0px;
+}

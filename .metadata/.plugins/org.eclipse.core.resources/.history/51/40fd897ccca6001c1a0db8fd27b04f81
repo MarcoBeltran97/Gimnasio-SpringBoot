@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card-tipoproducto{
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Bangers&family=Josefin+Sans&family=League+Gothic&family=Nunito:ital@1&family=Raleway:wght@100&family=Signika+Negative&display=swap" rel="stylesheet"> 
+}

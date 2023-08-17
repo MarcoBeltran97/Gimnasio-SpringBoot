@@ -1,0 +1,9 @@
+package com.init.gimnasio.interfaces;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.init.gimnasio.modelo.ProductoCliente;
+
+public interface IProductoCliente extends CrudRepository<ProductoCliente, Integer> {
+
+}

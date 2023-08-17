@@ -1,0 +1,4 @@
+.format-product{
+	display: block;
+  justify-content: space-around;
+}

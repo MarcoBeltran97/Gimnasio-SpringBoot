@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/CSS/style.css">
+<title>Insert title here</title>
+</head>
+<body>
+	<div th:text="${usuariologin}"></div>
+<div><a href="/shop">Contissssssnue</a></div>	
+	<!-- Mostramos en un div con la clase Card de Bootstrap para poder subir la iamgen y los demas valores en la BD -->
+	<div><a th:href="@{/shop}" class="btn btn-primary">Nuevo</a></div>
+	<div class="container">
+				<div th:each="producto:${productos}">
+					<div class="format-product">
+						<div class="card" style="width: 18rem;">
+						  <img th:src="*{'data:image/jpeg;base64,'+{producto.imagen_producto}}" class="card-img-top">
+						  <div class="card-body">
+							  <form th:action="@{/saveproducto}" th:object=${producto_cliente} method="POST">
+							  
+							  <!-- Si en caso solo se quiera recuperar los datos para luego listarlos desde la con sus valores -->
+							  	<!-- 
+							  	<h7 th:name="txttipo_productocliente" id="txttipo_productocliente" th:value="${producto.tipo_producto}" th:text="${producto.tipo_producto}" class="card-title"></h7>
+							    <h5 th:name="txtnombre_productocliente" id="txtnombre_productocliente" th:value="${producto.nombre_producto}" th:text="${producto.nombre_producto}" class="card-title"></h5>
+							    <p th:name="txtdescripcionproducto" id="txtdescripcionproducto" th:value="${producto.descripcion}" th:text="${producto.descripcion}" class="card-text"></p>
+							    <h3 th:name="txtprecio_uni_producto" id="txtprecio_uni_producto" th:value="${producto.precio_uni}" th:text="${producto.precio_uni}" class="card-text"></h3>
+							  -->
+							  
+							    <input th:name="txttipo_productocliente" id="txttipo_productocliente" th:value="${producto.tipo_producto}" th:text="${producto.tipo_producto}" type="hidden" class="card-title">
+							    <input th:name="txtnombre_productocliente" id="txtnombre_productocliente" th:value="${producto.nombre_producto}" th:text="${producto.nombre_producto}" type="hidden" class="card-title">
+							    <input th:name="txtdescripcionproducto" id="txtdescripcionproducto" th:value="${producto.descripcion}" th:text="${producto.descripcion}" type="hidden" class="card-title">
+							    <input th:name="txtprecio_uni_producto" id="txtprecio_uni_producto" th:value="${producto.precio_uni}" th:text="${producto.precio_uni}" type="hidden" class="card-title">
+							    <input type="submit" value="Añadir al Carrito" class="btn btn-success">
+							  </form>
+						  </div>
+						</div>
+					</div>
+				</div>
+	</div>
+	
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="/JS/functions.js"></script>
+</body>
+</html>

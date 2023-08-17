@@ -1,0 +1,42 @@
+package com.init.gimnasio.servicio;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.init.gimnasio.interfaces.IProductoCliente;
+import com.init.gimnasio.interfazServicio.IProductoClienteService;
+import com.init.gimnasio.modelo.ProductoCliente;
+
+public class ProductoClienteService implements IProductoClienteService {
+
+	@Autowired
+	private IProductoCliente iproducto;
+
+	@Override
+	public List<ProductoCliente> listar() {
+		return (List<ProductoCliente>)iproducto.findAll();
+	}
+
+	@Override
+	public Optional<Producto> listarId(int id) {
+		return iproducto.findById(id);
+	}
+
+	@Override
+	public int save(Producto p) {
+		int res = 0;
+		Producto producto = iproducto.save(p);
+		if(!producto.equals(null)) {
+			res = 1;
+		}
+		return res;
+	}
+
+	@Override
+	public void delete(int id) {
+		iproducto.deleteById(id);
+	}
+
+}

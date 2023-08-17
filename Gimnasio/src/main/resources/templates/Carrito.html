@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -798,4 +799,46 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="/JS/functions.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="container mt-4">
+	<a th:href="@{/shop}" class="btn btn-primary">Nuevo</a>
+		<table class="table">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>PRODUCTO</th>
+				<th>NOMBRE</th>
+				<th>DESCRIPCION</th>
+				<th>CANTIDAD</th>
+				<th>PRECIO UNITARIO</th>
+			</tr>
+		</thead>
+			<tbody>
+				<tr th:each="producto:${productoscliente}">
+					<td th:text="${producto.idproducto}"></td>
+					<td th:text="${producto.tipo_producto}"></td>
+					<td th:text="${producto.nombre_producto}"></td>
+					<td th:text="${producto.descripcion}"></td>
+					<td th:text="${producto.precio_uni}"></td>
+					<td>
+						<a th:href="@{/editar/}+${producto.idproducto}" class="btn btn-warning">EDITAR</a>
+						<a th:onclick="eliminarProducto([[${producto.idproducto}]])" class="btn btn-danger">ELIMINAR</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="/JS/functions.js"></script>
+</body>
+>>>>>>> a233689389d1144e4f7249b103394cf42e7c7698
 </html>

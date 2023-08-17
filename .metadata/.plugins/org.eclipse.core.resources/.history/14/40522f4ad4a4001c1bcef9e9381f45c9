@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div>
+		<select>
+			<option><div th:text="${usuariologin}"></div></option>
+			<option></option>
+		</select>
+	</div>
+	
+</body>
+</html>

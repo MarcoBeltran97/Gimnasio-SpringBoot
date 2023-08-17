@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div>
+		<select class="form-control">
+			<option type="button"><div th:text="${usuariologin}"></div></option>
+			<option><a th:href="@{/carrito}"></a>Config</option>
+			<option href="@{/editarcliente/}+${cliente.username}">Coddnfiguración</option>
+			<option>Salir</option>
+			<input href="/Productos.html" type="submit" value="Guardar">
+			
+		</select>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,14 @@
+package com.init.gimnasio.interfazServicio;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.init.gimnasio.modelo.ProductoCliente;
+
+public interface IProductoClienteService {
+	public List<ProductoCliente> listar();
+	public Optional<ProductoCliente> listarId(int id);
+	public int save(ProductoCliente p);
+	public void delete(int id);
+
+}
