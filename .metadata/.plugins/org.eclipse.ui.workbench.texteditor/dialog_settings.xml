@@ -6,8 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="input_id"/>
+		<item key="selection" value="function eliminar(id){"/>
 		<list key="findhistory">
+			<item value="function eliminar(id){"/>
+			<item value="======="/>
+			<item value="Lobster"/>
+			<item value="DetalleCompra"/>
 			<item value="input_id"/>
 			<item value="txtprecio_uni"/>
 			<item value="txttipo_producto"/>
@@ -19,10 +23,6 @@
 			<item value="guardar"/>
 			<item value="guardarDetalleCompra"/>
 			<item value="logo7"/>
-			<item value="tarjeta"/>
-			<item value="Logo_principal"/>
-			<item value="ubicanos"/>
-			<item value="facebook"/>
 		</list>
 		<list key="replacehistory">
 		</list>

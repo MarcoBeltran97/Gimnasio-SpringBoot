@@ -1,18 +1,4 @@
-<<<<<<< HEAD
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
-
-
-=======
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-<<<<<<< HEAD
-
-
-=======
->>>>>>> d169ce6bc648b3c3dd6fd124ca7415afcfd9745d
->>>>>>> a233689389d1144e4f7249b103394cf42e7c7698
