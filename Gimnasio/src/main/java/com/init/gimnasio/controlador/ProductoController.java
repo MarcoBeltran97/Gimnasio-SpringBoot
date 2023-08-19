@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.init.gimnasio.interfazServicio.IDetalleCompraService;
 import com.init.gimnasio.interfazServicio.IProductoService;
 import com.init.gimnasio.modelo.Producto;
-import com.init.gimnasio.modelo.Detalle_Compra;
+import com.init.gimnasio.modelo.DetalleCompra;
 import com.init.gimnasio.servicio.DetalleCompraService;
 
 @Controller
@@ -30,34 +30,34 @@ public class ProductoController {
 	private DetalleCompraService productocliservice;
 	
 	@Autowired
-	private IDetalleCompraService productoclienteservice;
+	private IDetalleCompraService i_detallecompra;
 	
 	@GetMapping("/carrito")
 	public String listar(Model model) {
-		List<Detalle_Compra>productos=productoclienteservice.listarProducto();
-		model.addAttribute("productoscliente", productos);
+		List<DetalleCompra>detalle_compra=i_detallecompra.listarDetalleCompra();
+		model.addAttribute("detalle_compra_controller", detalle_compra);
 		return "Carrito";
 	}
 	
 	@GetMapping("/shop")
 	public String agregar(Model model) {
 		List<Producto>productos=service.listar();
-		model.addAttribute("productos", productos);
+		model.addAttribute("producto_controller", productos);
 		return "Productos";
 	}
 	
 	
 	/*@PostMapping("/save")
 	public String save(@Validated ProductoCliente c, Model model) {
-		productoclienteservice.saveproducto(c);
+		i_detallecompra.saveproducto(c);
 		return "redirect:/carrito";
 	}*/
 	
 	/**/
 	
 	@PostMapping("/save")
-	public String save(@Validated Detalle_Compra c, Model model) {
-		productoclienteservice.saveproducto(c);
+	public String save(@Validated DetalleCompra c, Model model) {
+		i_detallecompra.saveproducto(c);
 		return "redirect:/carrito";
 	}
 	
@@ -94,14 +94,14 @@ public class ProductoController {
 	
 	@GetMapping("/editar/{id}")
 	public String editarCliente(@PathVariable int id, Model model) {
-		Optional<Detalle_Compra>productoCliente = productoclienteservice.listarProductoId(id);
+		Optional<DetalleCompra>productoCliente = i_detallecompra.listarProductoId(id);
 		model.addAttribute("producto_cliente", productoCliente);
 		return "Update";
 	}
 	
 	@GetMapping("/delete/{id}")
 	public String delete(Model model, @PathVariable int id) {
-		productoclienteservice.deleteproducto(id);
+		i_detallecompra.deleteproducto(id);
 		return "redirect:/carrito";
 	}
 

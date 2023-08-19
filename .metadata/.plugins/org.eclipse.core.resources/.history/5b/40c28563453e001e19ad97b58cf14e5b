@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" href="/CSS/carrito.css">
+<title>Carrito</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg ">
+		<img src="/img/logo7.png" width="150px" height="120px"
+			style="border-radius: 50%; border-top: 2px solid red; margin-left: 50px;"
+			alt="">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"> </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarNav" aria-controls="navbarNav"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-lg-auto">
+					<li class="nav-item"><a href="#home"
+						class="nav-link smoothScroll">Home</a></li>
+					<li class="nav-item"><a href="#about"
+						class="nav-link smoothScroll">About Us</a></li>
+					<li class="nav-item"><a href="#class"
+						class="nav-link smoothScroll">Classes</a></li>
+					<li class="nav-item"><a href="#schedule"
+						class="nav-link smoothScroll">Schedules</a></li>
+					<li class="nav-item"><a href="../HTML/Shop.html"
+						class="nav-link ">SHOP</a></li>
+					<li class="nav-item"><a href="../HTML/Login.html"
+						class="nav-link ">LOGIN</a></li>
+				</ul>
+
+				<ul class="social-icon ml-lg-3">
+					<li><a href="https://fb.com/tooplate" class="fa fa-facebook"></a></li>
+					<li><a href="#" class="fa fa-twitter"></a></li>
+					<li><a href="#" class="fa fa-instagram"></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="container mt-4">
+			<a th:href="@{/shop}" class="btn btn-primary">Nuevo</a>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>USUARIO</th>
+						<th>PRODUCTO</th>
+						<th>CANTIDAD</th>
+						<th>MONTO TOTAL</th>
+						<th>FECHA</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="detalle_compra:${detalle_compra_controlador}">
+						<td th:text="${detalle_compra.iddetallecompra}"></td>
+						<td th:text="${detalle_compra.idusuario}"></td>
+						<td th:text="${detalle_compra.idproducto}"></td>
+						<td th:text="${detalle_compra.cantidad}"></td>
+						<td th:text="${detalle_compra.monto_total}"></td>
+						<td th:text="${detalle_compra.fecha}"></td>
+						<td><a th:href="@{/editar/}+${detalle_compra.iddetallecompra}"
+							class="btn btn-warning">EDITAR</a> <a
+							th:onclick="eliminarProducto([[${detalle_compra.iddetallecompra}]])"
+							class="btn btn-danger">ELIMINAR</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- RESUMEN DE COMPRA -->
+		<div class="card text-center">
+			<div class="card-header fs-5 text-white"
+				style="background-color: #4cae4c;">RESUMEN DE COMPRA</div>
+			<div class="card-body d-inline-flex">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">SUB TOTAL:</th>
+							<td><input class="text-center border-0" value="" /></td>
+						</tr>
+						<tr>
+							<th scope="row">TOTAL</th>
+							<td><input class="text-center border-0"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="card-footer  text-white" style="background-color: white;">
+				<img src="img/proteger.png" width="25px"> <img
+					src="img/candado-seguro.png" width="25px"> <img
+					src="img/tarjeta-de-credito.png" width="25px"> <a
+					data-bs-toggle="modal" data-bs-target="#exampleModal">
+					<button class=" btn btn-primary ms-5"
+						style="border-radius: 10px; height: 50px;">FINALIZAR
+						COMPRA</button>
+				</a>
+			</div>
+		</div>
+		<!-- RESUMEN DE COMPRA FINAL -->
+		<!-- CARD ADICIONAL PRODUCTOS -->
+		<p class="text-center h4 fs-1 mt-5"
+			style="font-family: 'Lobster', cursive;">Completa tu Compra</p>
+		<div id="carouselExampleInterval" class="carousel slide"
+			data-bs-ride="carousel">
+			<div class="carousel-inner mt-1 ">
+				<div class="carousel-item active" data-bs-interval="10000">
+					<div class="bodycard">
+						<div class="containerd">
+							<div class="card2">
+								<img src="/img/Producto1.jpg" alt="" />
+								<div class="card-body">
+									<p class="card-text">
+										<input name="txt_info"
+											value="Ricocan Cordero Adultos Razas Pequeñas X 08 Kg"
+											type="hidden">Ricocan Cordero Adultos Razas Pequeñas
+										X 08 Kg
+									</p>
+									<p class="text-center"></p>
+									<label>S/150.52</label><input name="txt_precio" value="150.52"
+										type="hidden"> <span class="ms-4"
+										style="text-decoration: line-through;">S/160.00</span>
+									<p>
+										<input name="txt_idcliente" value="${id}" type="hidden">
+									</p>
+									<a href="#" class="fs-6 link-primary"><span
+										class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+									<button class="btn btn-danger btn-lg text-center mt-3"
+										style="margin: 10px; padding: 10px;" name="btn_comprar">
+										Comprar</button>
+								</div>
+							</div>
+
+							<div class="card2">
+								<img src="/img/Producto3.jpg" alt="" />
+								<div class="card-body">
+									<p class="card-text">
+										<input name="txt_info"
+											value="Ricocan Cordero Adultos Razas Pequeñas X 08 Kg"
+											type="hidden">Ricocan Cordero Adultos Razas Pequeñas
+										X 08 Kg
+									</p>
+									<p class="text-center"></p>
+									<label>S/150.52</label><input name="txt_precio" value="150.52"
+										type="hidden"> <span class="ms-4"
+										style="text-decoration: line-through;">S/160.00</span>
+									<p>
+										<input name="txt_idcliente" value="${id}" type="hidden">
+									</p>
+									<a href="#" class="fs-6 link-primary"><span
+										class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+									<button class="btn btn-danger btn-lg text-center mt-3"
+										style="margin: 10px; padding: 10px;" name="btn_comprar">
+										Comprar</button>
+								</div>
+							</div>
+
+							<div class="card2">
+								<img src="/img/Producto2.png" alt="" />
+
+								<div class="card-body">
+									<p class="card-text">
+										<input name="txt_info"
+											value="Ricocan Cordero Adultos Razas Pequeñas X 08 Kg"
+											type="hidden">Ricocan Cordero Adultos Razas Pequeñas
+										X 08 Kg
+									</p>
+									<p class="text-center"></p>
+									<label>S/150.52</label><input name="txt_precio" value="150.52"
+										type="hidden"> <span class="ms-4"
+										style="text-decoration: line-through;">S/160.00</span>
+									<p>
+										<input name="txt_idcliente" value="${id}" type="hidden">
+									</p>
+									<a href="#" class="fs-6 link-primary"><span
+										class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+									<button class="btn btn-danger btn-lg text-center mt-3"
+										style="margin: 10px; padding: 10px;" name="btn_comprar">
+										Comprar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item" data-bs-interval="2000">
+					<div class="bodycard">
+						<div class="containerd">
+							<div class="card2">
+								<img src="img/ricocan4.jpg" alt="" />
+								<div class="card-body">
+									<p class="card-text">
+										<input name="txt_info"
+											value="Ricocan Cordero Adultos Razas Pequeñas X 08 Kg"
+											type="hidden">Ricocan Cordero Adultos Razas Pequeñas
+										X 08 Kg
+									</p>
+									<p class="text-center"></p>
+									<label>S/150.52</label><input name="txt_precio" value="150.52"
+										type="hidden"> <span class="ms-4"
+										style="text-decoration: line-through;">S/160.00</span>
+									<p>
+										<input name="txt_idcliente" value="${id}" type="hidden">
+									</p>
+									<a href="#" class="fs-6 link-primary"><span
+										class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+									<button class="btn btn-danger btn-lg text-center mt-3"
+										style="margin: 10px; padding: 10px;" name="btn_comprar">
+										Comprar</button>
+								</div>
+							</div>
+
+							<div class="card2">
+								<img src="img/ricocan3.jpg" alt="" />
+
+								<div class="card-body">
+									<p class="card-text">
+										<input name="txt_info"
+											value="Ricocan Cordero Adultos Razas Pequeñas X 08 Kg"
+											type="hidden">Ricocan Cordero Adultos Razas Pequeñas
+										X 08 Kg
+									</p>
+									<p class="text-center"></p>
+									<label>S/150.52</label><input name="txt_precio" value="150.52"
+										type="hidden"> <span class="ms-4"
+										style="text-decoration: line-through;">S/160.00</span>
+									<p>
+										<input name="txt_idcliente" value="${id}" type="hidden">
+									</p>
+									<a href="#" class="fs-6 link-primary"><span
+										class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+									<button class="btn btn-danger btn-lg text-center mt-3"
+										style="margin: 10px; padding: 10px;" name="btn_comprar">
+										Comprar</button>
+								</div>
+							</div>
+
+							<div class="card2">
+								<img src="img/medicado1.jpg" alt="" />
+								<div class="card-body">
+									<p class="card-text">
+										<input name="txt_info"
+											value="Ricocan Cordero Adultos Razas Pequeñas X 08 Kg"
+											type="hidden">Ricocan Cordero Adultos Razas Pequeñas
+										X 08 Kg
+									</p>
+									<p class="text-center"></p>
+									<label>S/150.52</label><input name="txt_precio" value="150.52"
+										type="hidden"> <span class="ms-4"
+										style="text-decoration: line-through;">S/160.00</span>
+									<p>
+										<input name="txt_idcliente" value="${id}" type="hidden">
+									</p>
+									<a href="#" class="fs-6 link-primary"><span
+										class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+									<button class="btn btn-danger btn-lg text-center mt-3"
+										style="margin: 10px; padding: 10px;" name="btn_comprar">
+										Comprar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- REDES -->
+		<div class="sticky-container">
+			<ul class="sticky">
+				<li
+					style="box-shadow: 10px 20px 20px blue; border-radius: 15px; background-color: blue">
+					<img class="" src="img/facebook.png" width="32" height="32">
+					<p class=" text-white">
+						<a href="https://www.facebook.com/veterinariahuellitasbarranca"
+							target="_blank" class="text-white"> <b> Huellitas<br
+								class="">Facebook
+						</b></a>
+					</p>
+				</li>
+				<li
+					style="box-shadow: 0px 10px 20px cyan; border-radius: 15px; background-color: aqua">
+					<img src="img/twitter.png" width="32" height="32">
+					<p class="text-white">
+						<a href="https://twitter.com/huellitas_vet1" target="_blank"
+							class=""><b> Huellitas<br>Twiter
+						</b></a>
+					</p>
+				</li>
+
+				<li
+					style="box-shadow: 0px 10px 20px red; border-radius: 15px; background-color: #E5110A">
+					<img src="img/youtubenegro.png" width="32" height="32">
+					<p class="text-white">
+						<a href="https://www.youtube.com/channel/UC0JKjMXyVrfop-2mwC8lZ8w"
+							target="_blank" class="text-white"> <b> Suscribete<br>YouYube
+						</b></a>
+					</p>
+				</li>
+				<li
+					style="box-shadow: 0px 10px 20px #00ff00; border-radius: 15px; background-color: greenyellow">
+					<img src="img/whatssapredes.png" width="32" height="32">
+					<p class="text-white">
+						<a
+							href="https://api.whatsapp.com/send?phone=+935982848&text=!Hola!,%20%20Quisiera%20contactarme%20con%20la%20Cl%C3%ADnica%20veterinaria%20Huellitas%20%20"
+							target="_blank" class=""> <b> Huellitas<br>Contactanos!
+						</b></a>
+					</p>
+				</li>
+			</ul>
+		</div>
+		<!-- REDES FIN -->
+
+		<!-- END ADICIONAL PRODUCTOS -->
+		<!-- METODO DE PAGO -->
+
+		<div class="modal fade" id="exampleModal" tabindex="-1"
+			aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog ">
+				<!-- 100*448 -->
+				<div class="modal-content"
+					style="width: 500px !important; height: 640px">
+					<div class="modal-header ">
+						<h5 class="modal-title h5"
+							style="margin-left: 30%; font-family: sans-serif"
+							id="exampleModalLabel">
+							<b>METODOS DE PAGOS </b>
+						</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body ">
+						<div class="container border-2  p-4 me-5 d-inline-flex">
+							<button
+								class="btn btn-lg btn-outline-warning border-warning border-bottom"
+								style="box-shadow: 0 12px 10px">
+								<a> PAGO EFECTIVO <img src="img/logo-pago-efectivo.png"
+									class="img-fluid ms-5" alt="alt" width="30px" height="30px" />
+								</a>
+							</button>
+							<div class="ms-2 mt-2">
+								<img src="img/logo-pago-efectivo.png" class="img-fluid ms-2"
+									alt="alt" width="40px" height="40px" /> <img
+									src="img/yape.png" class="img-fluid" alt="alt" width="40px"
+									height="40px" /> <img src="img/westerunicion.png"
+									class="img-fluid" alt="alt" width="40px" height="40px" />
+							</div>
+						</div>
+						<div class="container  border-2   mt-3 p-4 me-5 d-inline-flex">
+							<button
+								class="btn btn-lg btn-outline-danger border-warning border-bottom"
+								data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+								style="box-shadow: 0 20px 10px">
+								<a> TARJETA DE DEBITO <img src="img/debito.jpg"
+									class="img-fluid ms-1" alt="alt" width="40px" height="40px" />
+								</a>
+							</button>
+							<div class="ms-2 mt-2">
+								<img src="img/visaminitarjetas.png" class=" ms-2" alt="alt"
+									width="40px" height="40px" /> <img src="img/mastercard2.png"
+									class="" alt="alt" width="40px" height="40px" />
+							</div>
+						</div>
+						<div class="container border-2  mt-3 p-4 me-5 d-inline-flex">
+
+							<button class="btn btn-lg btn-outline-primary d-inline-flex"
+								data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+								style="box-shadow: 0 12px 10px">
+								<a> TARJETA DE CREDITO <img src="img/creditomastercard.png"
+									class="img-fluid" alt="alt" width="40px" height="40px" />
+								</a>
+							</button>
+							<div class="ms-2 mt-2">
+								<img src="img/visaminitarjetas.png" class="ms-1" alt="alt"
+									width="40px" height="40px" /> <img src="img/mastercard2.png"
+									class="" alt="alt" width="40px" height="40px" />
+							</div>
+						</div>
+					</div>
+					<div class="">
+						<div class="text-center text-modal h5 border-1  border-top"
+							style="font-family: 'Roboto', sans-serif;">
+							<b>PAGO SEGURO </b>
+						</div>
+						<div class="container">
+							<p class="text-center" style="font-family: 'Lora', serif;">
+								Cuando envies tu información de pago , los datos estan
+								protegidos por la tecnologia<b> SECURE SOCKET LAYER (SSL)</b>
+								,dotada de un certificado internacional.
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer ">
+						<div class="container  d-flex">
+							<div class="spinner-grow text-primary" role="status">
+								<span class="visually-hidden">Loading...</span>
+							</div>
+
+							<div class="spinner-grow text-success" role="status">
+								<span class="visually-hidden">Loading...</span>
+							</div>
+							<div class="spinner-grow text-danger" role="status">
+								<span class="visually-hidden">Loading...</span>
+							</div>
+							<div class="spinner-grow text-warning" role="status">
+								<span class="visually-hidden">Loading...</span>
+							</div>
+							<div class="spinner-grow text-dark" role="status">
+								<span class="visually-hidden">Loading...</span>
+							</div>
+
+							<button type="button" class="btn btn-danger  ms-5 text-center"
+								style="width: 200px" data-bs-dismiss="modal">Cancelar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- MODAL TARJETAS DE CREDITO Y DEBITO -->
+		<div class="modal fade " id="staticBackdrop" data-bs-backdrop="static"
+			data-bs-keyboard="false" tabindex="-1"
+			aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" style="width: auto; width: auto;">
+					<div class="modal-header">
+						<h5 class="modal-title" id="staticBackdropLabel">
+							<img src="img/candado.png" alt=""> <span class="">Operacion
+								100% Segura </span>
+						</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class=" p-2" id="containercolor">
+								<div class="row g-3">
+									<div class="col-md-6">
+										<label for="inputEmail4" class="form-label">Numero de
+											tarjeta</label> <input type="email" class="form-control"
+											placeholder="123412341234" id="inputEmail4">
+									</div>
+									<div class="col-md-3">
+										<label for="inputPassword4" class="form-label ms-4">Fecha
+											de</label> <select id="inputState" class="form-select">
+											<option selected>Mes</option>
+											<option>01</option>
+											<option>02</option>
+											<option>03</option>
+											<option>04</option>
+											<option>05</option>
+											<option>06</option>
+											<option>07</option>
+											<option>08</option>
+											<option>09</option>
+											<option>10</option>
+											<option>11</option>
+											<option>12</option>
+										</select>
+									</div>
+									<div class="col-md-3">
+										<label for="inputPassword4" class="form-label">Expiracion</label>
+										<select id="inputState" class="form-select">
+											<option selected>Año</option>
+											<option>01</option>
+											<option>21</option>
+											<option>22</option>
+											<option>23</option>
+											<option>24</option>
+											<option>25</option>
+											<option>26</option>
+											<option>27</option>
+											<option>28</option>
+											<option>29</option>
+											<option>30</option>
+											<option>31</option>
+										</select>
+									</div>
+									<div class="col-md-8">
+										<label for="inputAddress" class="form-label">Titular
+											de la Tarjeta</label> <input type="text" class="form-control"
+											id="inputAddress" placeholder="1234 Main St">
+									</div>
+									<div class="col-md-4">
+										<label for="inputEmail4" class="form-label">Codigo
+											Seguridad</label> <input type="email" class="form-control"
+											id="inputEmail4" placeholder="000">
+									</div>
+								</div>
+							</div>
+							<!---------------------------------------------->
+							<div class="  p-1 mt-2">
+								<div class="row g-3">
+
+									<div class="col-6">
+										<label for="inputAddress" class="form-label">DNI</label> <input
+											type="text" class="form-control" id="inputAddress"
+											placeholder="1234 Main St">
+									</div>
+									<div class="col-md-6">
+										<label for="inputEmail4" class="form-label">Telefono</label> <input
+											type="email" class="form-control" id="inputEmail4"
+											placeholder="000">
+									</div>
+									<div class="col-12">
+										<label for="inputAddress" class="form-label">Email</label> <input
+											type="text" class="form-control" id="inputAddress"
+											placeholder="1234 Main St">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 mt-3 d-flex">
+
+								<a href="reporteclientes.jsp" type="submit"
+									class="btn btn-danger m-auto ms-"
+									style="margin-left: 100px; width: 250px"> Pagar</a>
+								<button type="submit" class="btn btn-warning m-auto ms-2"
+									style="width: 250px">Cancelar</button>
+
+							</div>
+							<!--------------------------------->
+						</form>
+					</div>
+					<div class="modal-footer">
+						<p>
+							<img src="img/advertencia.png" class="" alt=""> Algunas
+							tarjetas de débito con código CVV podrían ser rechazadas por la
+							plataforma de pago que utilizamos debido a políticas de seguridad
+							del banco. El cobro de la transacción se realizara en Soles. Si
+							la cuenta asociada a tu tarjeta es en Dólares, el tipo de cambio
+							utilizado será el de tu banco.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FINAL MODAL TARJETAS DE CREDITO Y DEBITO -->
+		<div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
+			<div class="col ">
+				<div class="">
+					<div class="card-body ">
+						<div class="container text-center fs-4 ">Metodos de Entrega
+						</div>
+					</div>
+					<!--PAGO-->
+					<!-- Button trigger modal -->
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop"
+						data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+						aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="staticBackdropLabel">Modal
+										title</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="mb-3">
+											<label for="exampleInputEmail1" class="form-label">Email
+												address</label> <input type="email" class="form-control"
+												id="exampleInputEmail1" aria-describedby="emailHelp">
+											<div id="emailHelp" class="form-text">We'll never share
+												your email with anyone else.</div>
+										</div>
+										<div class="mb-3">
+											<label for="exampleInputPassword1" class="form-label">Password</label>
+											<input type="password" class="form-control"
+												id="exampleInputPassword1">
+										</div>
+										<div class="mb-3 form-check">
+											<input type="checkbox" class="form-check-input"
+												id="exampleCheck1"> <label class="form-check-label"
+												for="exampleCheck1">Check me out</label>
+										</div>
+										<button type="submit" class="btn btn-primary">Submit</button>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary"
+										data-bs-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Understood</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row-cols-1 row-cols-md-3 g-4">
+						<div class="col">
+							<div class="card h-100  bg-secondary">
+								<img src="img/reloj32.png" class=" img-fluid" alt="..."
+									width="50px" height="50px">
+								<div class="card-body">
+									<h5 class="card-title">Despacho Express</h5>
+									<p class="card-text text-decoration-line-through text-center">No
+										disponible</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100 btn btn-outline-info text-reset">
+								<img src="img/entrega.png" class=" img-fluid" alt="..."
+									width="50px" height="50px">
+								<div class="card-body">
+									<h5 class="card-title d-inline-flex text-center">Despacho
+										Programado</h5>
+									<p class="card-text text-capitalize">Desde el 11 de Octubre
+										a partir de S/95.00</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100 btn btn-outline-info text-reset">
+								<img src="img/supermercado.png" class=" img-fluid" alt="..."
+									width="50px" height="50px">
+								<div class="card-body">
+									<h5 class="card-title">Retiro en Tienda</h5>
+									<p class="card-text">Despues de 1 dia en efectuar la compra</p>
+									<a href="" class="ms-3">Ver Tiendas</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<img src="img/metodos de pago.png" class="img-fluid mt-5  m-auto"
+						alt="" width="400px">
+					<!--METODOS DE PAGO-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true"
+		style="display: none;">
+		<div class="vertical-alignment-helper">
+			<div class="modal-dialog vertical-align-center">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn btn-outline-secondary"
+							data-dismiss="modal">
+							<span aria-hidden="true">×</span><span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">Mantenimiento</h4>
+					</div>
+					<form method="post"
+						action="/Veterinaria_Huellitas/ProductoController">
+						<div class="modal-body">
+							<table class="table table-bordered border-Default">
+								<tr>
+									<th class="text-center"><input
+										class="text-center tableid border-0" type="text" id="cod"
+										name="txt_cod" readonly=""></th>
+									<th class="text-center"><input
+										class="text-center tabledes border-0" type="text" id="des"
+										readonly=""></th>
+									<th class="text-center"><input
+										class="text-center tableprec border-0" type="text" id="pre"
+										readonly=""><br></th>
+									<th class="text-center"><input
+										class="text-center tablecant" type="number" id="cant"
+										name="txt_cant" oninput="calcular()"><br></th>
+									<th class="text-center"><input
+										class="text-center tableprec border-0" type="text" id="tot"
+										name="txt_tot" readonly=""></th>
+								</tr>
+							</table>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default"
+								data-dismiss="modal">Cerrar</button>
+							<button name="btn_actualizar" type="submit"
+								class="btn btn-primary">GUARDAR CAMBIOS</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--METODO DE PAGO-->
+	<div
+		class="container-fluid  py-5 bg-dark border border-1 border-white horarios_p"
+		style="background-color: #8E44AD">
+		<div class="row">
+			<div class="col-md-4 ">
+				<h4 class="fs-2 text-capitalize text-white ms-5">LOCALES Y
+					CONTACTO</h4>
+				<ul class="list-unstyled mb-0 ms-5">
+					<li>
+						<p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+						<p class="mb-0">998 195 193</p>
+						<p>01 446 6179 | 01 637 5132</p>
+					</li>
+					<li>
+						<p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+						<p class="mb-0">998 195 193</p>
+						<p>01 446 6179 | 01 637 5132</p>
+					</li>
+					<li>
+						<p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+						<p class="mb-0">998 195 193</p>
+						<p>01 446 6179 | 01 637 5132</p>
+					</li>
+					<li>
+						<p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+						<p class="mb-0">998 195 193</p>
+						<p>01 446 6179 | 01 637 5132</p>
+					</li>
+					<li>
+						<p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+						<p class="mb-0">998 195 193</p>
+						<p>01 446 6179 | 01 637 5132</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<h4 class="text-uppercase oswald fs-2 text-capitalize text-white">HORARIOS</h4>
+				<ul class="list-unstyled mb-0">
+					<li>
+						<p class="mb-0 font-weight-bold">Barranco</p>
+						<p class="mb-0">Atención: Lunes a Domingo - 7 a.m. - 8 p.m.</p>
+						<p>EMERGENCIAS 24hrs</p>
+					</li>
+					<li>
+						<p class="mb-0 font-weight-bold">Lince</p>
+						<p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+						<p>Domingos - 9 a.m. - 6 p.m.</p>
+					</li>
+					<li>
+						<p class="mb-0 font-weight-bold">San Borja</p>
+						<p>Atención: Lunes a Domingo - 8 a.m. - 8 p.m.</p>
+					</li>
+					<li>
+						<p class="mb-0 font-weight-bold">Los Olivos</p>
+						<p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+						<p>Domingos - 9 a.m. - 6 p.m.</p>
+					</li>
+					<li>
+						<p class="mb-0 font-weight-bold">San Juan de Miraflores</p>
+						<p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+						<p class="mb-0">Domingos - 9 a.m. - 6 p.m.</p>
+					</li>
+				</ul>
+			</div>
+			<!--//////////////////-->
+
+			<div class="col-md-2">
+				<img src="img/logo7.png" width="300px">
+			</div>
+		</div>
+	</div>
+
+	<footer class="bg-dark text-white p-3 ">
+		<div class="container">
+			<div class="row">
+				<ul class="nav justify-content-center">
+					<li class="nav-item -"><a class="nav-link active"
+						aria-current="page" href="#"> <i class="fab fa-facebook">
+						</i>
+					</a></li>
+					<li class="nav-item -"><a class="nav-link" href="#">Terminos
+							y condiciones</a></li>
+					<li class="nav-item -"><a class="nav-link" href="#">Contacto</a>
+					</li>
+					<li class="nav-item -"><a class="nav-link" href="#">Politicas
+							de Privacidad</a></li>
+					<li class="nav-item -"><a class="nav-link" href="#">Blog</a></li>
+					<li class="nav-item -"><a class="nav-link" href="#">Marcas</a>
+					</li>
+					<li class="nav-item -"><a class="nav-link" href="#">Creadores</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row d-flex justify-content-center align-items-center">
+			<img src="../Img/libro-de-reclamaciones.png"
+				style="width: 90px; padding-bottom: 10px;" alt="">
+			<p class="text-center text-capitalize">libro de reclamaciones</p>
+		</div>
+		<!---->
+	</footer>
+
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="/JS/functions.js"></script>
+</body>
+</html>

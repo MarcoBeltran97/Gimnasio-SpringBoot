@@ -6,8 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="function eliminar(id){"/>
+		<item key="selection" value="Añadir"/>
 		<list key="findhistory">
+			<item value="añadir"/>
+			<item value="producto"/>
+			<item value="productoclienteservice"/>
+			<item value="guardarDetalleCompra"/>
+			<item value="productoscliente"/>
+			<item value="Añadir al Carrito"/>
+			<item value="producto_cliente"/>
 			<item value="function eliminar(id){"/>
 			<item value="======="/>
 			<item value="Lobster"/>
@@ -16,15 +23,10 @@
 			<item value="txtprecio_uni"/>
 			<item value="txttipo_producto"/>
 			<item value="tipo_producto"/>
-			<item value="usuariologin"/>
-			<item value="txtusuario"/>
-			<item value="logeo"/>
-			<item value="Añadir al Carrito"/>
-			<item value="guardar"/>
-			<item value="guardarDetalleCompra"/>
-			<item value="logo7"/>
 		</list>
 		<list key="replacehistory">
+			<item value="detalle_compra"/>
+			<item value="i_detallecompra"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

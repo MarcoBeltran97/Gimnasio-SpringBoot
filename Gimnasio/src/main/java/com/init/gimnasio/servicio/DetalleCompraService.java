@@ -10,29 +10,28 @@ import org.springframework.stereotype.Service;
 
 import com.init.gimnasio.interfaces.IDetalleCompra;
 import com.init.gimnasio.interfazServicio.IDetalleCompraService;
-import com.init.gimnasio.modelo.Detalle_Compra;
+import com.init.gimnasio.modelo.DetalleCompra;
 
 @Service
 public class DetalleCompraService implements IDetalleCompraService {
 
 	@Autowired
 	private IDetalleCompra iproductocliente;
-
 	
 	@Override
-	public List<Detalle_Compra> listarProducto() {
-		return (List<Detalle_Compra>)iproductocliente.findAll();
+	public List<DetalleCompra> listarDetalleCompra() {
+		return (List<DetalleCompra>)iproductocliente.findAll();
 	}
 
 	@Override
-	public Optional<Detalle_Compra> listarProductoId(int id) {
+	public Optional<DetalleCompra> listarProductoId(int id) {
 		return iproductocliente.findById(id);
 	}
 
 	@Override
-	public int saveproducto(Detalle_Compra p) {
+	public int saveproducto(DetalleCompra p) {
 		int res = 0;
-		Detalle_Compra producto = iproductocliente.save(p);
+		DetalleCompra producto = iproductocliente.save(p);
 		if(!producto.equals(null)) {
 			res = 1;
 		}
@@ -47,7 +46,7 @@ public class DetalleCompraService implements IDetalleCompraService {
 	/*Empezamos a implementar el metodo donde recogeremos y enviaremos por parametro cada valor de la interfaz del producto servicio*/
 	public void guardarDetalleCompra(int usuario, int producto, int cantidad, double monto_total, String fecha) {
 		
-		Detalle_Compra p = new Detalle_Compra();
+		DetalleCompra p = new DetalleCompra();
 		
 		p.setIdusuario(1);
 		p.setIdproducto(producto);

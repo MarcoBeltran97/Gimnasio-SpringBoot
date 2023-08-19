@@ -19641,3 +19641,319 @@
 2023-08-18 21:03:17,738 [Worker-35: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-08-18 21:03:17,739 [Worker-35: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2023-08-18 21:03:17,739 [Worker-35: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 21:52:47,003 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-08-18 22:13:17,903 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:13:17,914 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:13:17,921 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:13:17,967 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:13:18,012 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:13:18,012 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:13:18,012 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:13:38,313 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:13:38,314 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:13:38,366 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:13:38,407 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:13:38,484 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:13:38,484 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:13:38,484 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:15:03,502 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:15:03,502 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:15:03,517 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:15:03,562 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:15:03,620 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:15:03,620 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:15:03,620 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:15:51,997 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:15:51,997 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:15:52,010 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:15:52,047 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:15:52,092 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:15:52,093 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:15:52,093 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:15:58,564 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:15:58,564 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:15:58,577 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:15:58,614 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:15:58,659 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:15:58,659 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:15:58,659 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:17:53,158 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:17:53,159 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:17:53,161 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 22:17:53,161 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:17:53,168 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:17:53,168 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:17:53,169 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:18:13,638 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:18:13,638 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:18:13,639 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 22:18:13,639 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:18:13,648 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:18:13,648 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:18:13,649 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:20:58,493 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-08-18 22:21:03,776 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: init.gimnasio:Gimnasio:1.0 @ C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\pom.xml.
+2023-08-18 22:21:05,973 [Worker-24: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Gimnasio/src/main/java
+2023-08-18 22:21:05,973 [Worker-24: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Gimnasio/src/main/resources
+2023-08-18 22:21:05,975 [Worker-24: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Gimnasio/src/main/resources
+2023-08-18 22:21:05,976 [Worker-24: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Gimnasio/src/test/java
+2023-08-18 22:21:06,925 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 8 sec
+2023-08-18 22:21:08,554 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:21:08,555 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:21:08,556 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:21:08,574 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:21:09,787 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:21:09,787 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:21:09,787 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:22:46,568 [Worker-23: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:22:46,568 [Worker-23: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:22:46,570 [Worker-23: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 22:22:46,570 [Worker-23: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:22:46,580 [Worker-23: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:22:46,580 [Worker-23: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:22:46,581 [Worker-23: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:23:54,055 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:23:54,055 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:23:54,055 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 22:23:54,056 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:23:54,062 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:23:54,063 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:23:54,063 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:26:20,322 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:26:20,322 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:26:20,323 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 22:26:20,324 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:26:20,330 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:26:20,331 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:26:20,331 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:26:36,516 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:26:36,516 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:26:36,517 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 22:26:36,517 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:26:36,525 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:26:36,525 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:26:36,525 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:33:14,276 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:33:14,277 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:33:14,290 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:33:14,349 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:33:14,397 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:33:14,397 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:33:14,398 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:34:08,663 [Worker-34: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:34:08,664 [Worker-34: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:34:08,664 [Worker-34: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 22:34:08,665 [Worker-34: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:34:08,673 [Worker-34: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:34:08,674 [Worker-34: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:34:08,674 [Worker-34: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:35:37,430 [Worker-34: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:35:37,430 [Worker-34: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:35:37,431 [Worker-34: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 22:35:37,431 [Worker-34: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:35:37,439 [Worker-34: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:35:37,440 [Worker-34: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:35:37,440 [Worker-34: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:37:57,950 [Worker-37: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:37:57,951 [Worker-37: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:37:57,967 [Worker-37: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:37:58,012 [Worker-37: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:37:58,096 [Worker-37: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:37:58,096 [Worker-37: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:37:58,096 [Worker-37: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:40:32,198 [Worker-30: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:40:32,199 [Worker-30: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:40:32,216 [Worker-30: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:40:32,250 [Worker-30: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:40:32,314 [Worker-30: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:40:32,314 [Worker-30: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:40:32,315 [Worker-30: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:42:24,538 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:42:24,539 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:42:24,553 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:42:24,591 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:42:24,649 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:42:24,649 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:42:24,649 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:46:22,625 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:46:22,626 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:46:22,642 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:46:22,677 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:46:22,729 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:46:22,729 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:46:22,730 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:47:02,492 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:47:02,493 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:47:02,510 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:47:02,544 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:47:02,600 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:47:02,600 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:47:02,601 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:47:28,594 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:47:28,594 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:47:28,610 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:47:28,651 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:47:28,707 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:47:28,707 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:47:28,707 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:47:50,218 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:47:50,218 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:47:50,234 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:47:50,269 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:47:50,319 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:47:50,319 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:47:50,320 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:48:01,743 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:48:01,743 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:48:01,759 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:48:01,794 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:48:01,848 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:48:01,848 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:48:01,848 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:48:28,314 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:48:28,314 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:48:28,329 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:48:28,363 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:48:28,410 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:48:28,410 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:48:28,410 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:48:31,543 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:48:31,543 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:48:31,560 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:48:31,598 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:48:31,648 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:48:31,649 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:48:31,649 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:51:48,481 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:51:48,482 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:51:48,497 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:51:48,537 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 22:51:48,589 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:51:48,589 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:51:48,589 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:53:44,069 [Worker-41: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:53:44,070 [Worker-41: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:53:44,070 [Worker-41: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 22:53:44,071 [Worker-41: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:53:44,078 [Worker-41: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:53:44,078 [Worker-41: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:53:44,079 [Worker-41: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:54:48,474 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:54:48,475 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:54:48,475 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 22:54:48,476 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:54:48,483 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:54:48,483 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:54:48,483 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:56:30,530 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:56:30,530 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:56:30,531 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 22:56:30,531 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:56:30,537 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:56:30,537 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:56:30,537 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:57:43,147 [Worker-40: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:57:43,147 [Worker-40: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:57:43,148 [Worker-40: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 22:57:43,148 [Worker-40: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:57:43,156 [Worker-40: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:57:43,157 [Worker-40: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:57:43,157 [Worker-40: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 22:59:06,772 [Worker-48: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:59:06,772 [Worker-48: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:59:06,773 [Worker-48: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 22:59:06,773 [Worker-48: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 22:59:06,779 [Worker-48: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 22:59:06,779 [Worker-48: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 22:59:06,779 [Worker-48: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 23:02:10,038 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:02:10,039 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:02:10,039 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 23:02:10,039 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 23:02:10,046 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:02:10,046 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:02:10,046 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 23:02:23,046 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:02:23,046 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:02:23,061 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 23:02:23,101 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 23:02:23,152 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:02:23,152 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:02:23,152 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 23:02:54,832 [Worker-45: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:02:54,832 [Worker-45: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:02:54,849 [Worker-45: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 23:02:54,884 [Worker-45: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 23:02:54,934 [Worker-45: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:02:54,935 [Worker-45: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:02:54,935 [Worker-45: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 23:03:16,799 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:03:16,800 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:03:16,817 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 23:03:16,852 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 23:03:16,899 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:03:16,899 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:03:16,899 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 23:03:44,127 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:03:44,127 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:03:44,128 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 23:03:44,128 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 23:03:44,137 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:03:44,137 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:03:44,138 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 23:04:10,034 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:04:10,035 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:04:10,035 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 23:04:10,036 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 23:04:10,042 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:04:10,042 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:04:10,042 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 23:04:14,253 [Worker-50: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:04:14,254 [Worker-50: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:04:14,267 [Worker-50: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 23:04:14,307 [Worker-50: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 23:04:14,359 [Worker-50: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:04:14,360 [Worker-50: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:04:14,360 [Worker-50: Launching Gimnasio - GimnasioApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 23:04:46,854 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:04:46,854 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:04:46,869 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 23:04:46,903 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 23:04:46,948 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:04:46,949 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:04:46,949 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 23:05:18,321 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:05:18,322 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:05:18,335 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 23:05:18,365 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 23:05:18,411 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:05:18,411 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:05:18,411 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 23:05:29,379 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:05:29,380 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:05:29,380 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 23:05:29,381 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 23:05:29,387 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:05:29,387 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:05:29,387 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 23:11:25,831 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:11:25,832 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:11:25,846 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 23:11:25,880 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 61 resources
+2023-08-18 23:11:25,922 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:11:25,923 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:11:25,923 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 23:11:35,200 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:11:35,200 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:11:35,201 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 23:11:35,201 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 23:11:35,209 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:11:35,209 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:11:35,210 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources
+2023-08-18 23:12:33,465 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:12:33,465 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:12:33,466 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-08-18 23:12:33,466 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-08-18 23:12:33,473 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-18 23:12:33,473 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-08-18 23:12:33,473 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Usuario\Desktop\Proyecto GYM\Gimnasio-SpringBoot\Gimnasio\src\test\resources

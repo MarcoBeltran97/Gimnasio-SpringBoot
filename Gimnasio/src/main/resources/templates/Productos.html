@@ -298,12 +298,12 @@
 	<!-- Mostramos en un div con la clase Card de Bootstrap para poder subir la iamgen y los demas valores en la BD -->
 	<div><a th:href="@{/shop}" class="btn btn-primary">Nuevo</a></div>
 	<div class="container contenedor ms-5">
-				<div th:each="producto:${productos}">
+				<div th:each="producto:${producto_controller}">
 					<div class="format-product">
 						<div class="card" style="width: 18rem;">
 						  <img th:src="*{'data:image/jpeg;base64,'+{producto.imagen_producto}}" class="card-img-top">
 						  <div class="card-body">
-							  <form th:action="@{/saveproducto}" th:object=${producto_cliente} method="POST">
+							  <form th:action="@{/saveproducto}" method="POST">
 							  
 							  <!-- Si en caso solo se quiera recuperar los datos para luego listarlos desde la con sus valores -->
 							  	
@@ -312,7 +312,7 @@
 							    <p th:name="txtdescripcionproducto" id="txtdescripcionproducto" th:value="${producto.descripcion}" th:text="${producto.descripcion}" class="card-text"></p>
 							    <h3 th:name="txtprecio_uni_producto" id="txtprecio_uni_producto" th:value="${producto.precio_uni}" th:text="${producto.precio_uni}" class="card-text"></h3>
 							  
-							  <!-- -->
+							  <!-- Hidden para ocultar los input -->
 							  	<div class="input-hidden">
 							  	<input th:name="txtidproducto" id="txtidproducto" th:value="${producto.idproducto}" type="hidden">
 							    <input th:name="txttipo_productocliente" id="txttipo_productocliente" th:value="${producto.tipo_producto}" type="hidden">

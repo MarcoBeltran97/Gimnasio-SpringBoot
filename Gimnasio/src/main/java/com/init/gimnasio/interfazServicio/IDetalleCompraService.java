@@ -5,12 +5,12 @@ import java.util.Optional;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import com.init.gimnasio.modelo.Detalle_Compra;
+import com.init.gimnasio.modelo.DetalleCompra;
 
 public interface IDetalleCompraService {
-	public List<Detalle_Compra> listarProducto();
-	public Optional<Detalle_Compra> listarProductoId(int id);
-	public int saveproducto(Detalle_Compra p);
+	public List<DetalleCompra> listarDetalleCompra();
+	public Optional<DetalleCompra> listarProductoId(int id);
+	public int saveproducto(DetalleCompra p);
 	public void deleteproducto(int id);
 	
 	/*Metodo para guardar los valores con la imagen, enviando todos los parametros*/
