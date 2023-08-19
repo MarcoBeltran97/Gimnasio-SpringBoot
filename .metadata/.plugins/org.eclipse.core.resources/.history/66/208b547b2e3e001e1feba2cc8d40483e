@@ -33,17 +33,17 @@
 									<br>
 									<div class="mb-4">
 										<label for="email" class="form-label text-white"><b>Correo</b></label>
-										<input type="text" th:field="*{username}"
+										<input type="email" th:field="*{username}"
 											style="border: none; border-bottom: 2px solid black; background: none;"
 											class="form-control text-white" required
-											placeholder="usuario@gmail.com" id='username'/>
+											placeholder="usuario@gmail.com" id='input_id'/>
 									</div>
 									<div class="mb-4">
 										<label for="Password" class="form-label text-white"><b>Contraseña</b></label>
 										<input type="password" th:field="*{password}"
 											class="form-control text-white"
 											style="border: none; border-bottom: 2px solid black; background: none;"
-											required placeholder="************" id='password'/>
+											required placeholder="************" id='input_id'/>
 									</div>
 
 									<div class="d-grid">
