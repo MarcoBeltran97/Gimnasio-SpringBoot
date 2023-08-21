@@ -1,0 +1,46 @@
+package com.init.gimnasio.modelo;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table (name = "rol")
+public class RolUsuario {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	private String nombre;
+	
+	public RolUsuario() {
+	}
+	
+	public RolUsuario(int id, String nombre) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+	}
+	
+	public RolUsuario(String nombre) {
+		super();
+		this.nombre = nombre;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+		
+}

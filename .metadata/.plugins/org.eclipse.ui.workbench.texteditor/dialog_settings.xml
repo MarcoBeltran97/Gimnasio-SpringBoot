@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="mapearRolesAutorizacion"/>
 		<list key="findhistory">
+			<item value="mapearRolesAutorizacion"/>
+			<item value="loginuser2"/>
+			<item value="loginuser"/>
+			<item value="servicionull3"/>
+			<item value="servicionull4"/>
+			<item value="controllerMarco"/>
+			<item value="loginuser correo"/>
+			<item value="servicioMarco"/>
+			<item value="logeoByEmail"/>
+			<item value="loginController"/>
+			<item value="servicionull"/>
+			<item value="servicionull2"/>
 			<item value="controllerMarco2"/>
 			<item value="detallecompraListarIdSP"/>
 			<item value="listarDetalleCompraId"/>
-			<item value="servicioMarco"/>
-			<item value="controllerMarco"/>
-			<item value="controller"/>
-			<item value="detalle_compra_sp"/>
-			<item value="detalle_compra_controller"/>
-			<item value="eliminarProducto"/>
-			<item value="/*"/>
-			<item value="añadir"/>
-			<item value="producto"/>
-			<item value="productoclienteservice"/>
-			<item value="guardarDetalleCompra"/>
-			<item value="productoscliente"/>
 		</list>
 		<list key="replacehistory">
 			<item value="detalle_compra"/>

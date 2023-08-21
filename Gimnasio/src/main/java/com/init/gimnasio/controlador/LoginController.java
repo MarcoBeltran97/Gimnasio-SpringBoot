@@ -29,25 +29,12 @@ public class LoginController {
 	@GetMapping("/login")
 	public String login (Model model) {
 		model.addAttribute("usuario", new Login());
+		System.out.print("map: /Login");
 		return "login";
-	}
+	}	
 	
+	//Login MySQL sin Spring Security
 	/*@PostMapping("/login")
-	public ModelAndView Resultado(@ModelAttribute("usuario") Login usuario) {
-		ModelAndView nav = new ModelAndView("Productos");
-		nav.addObject("usuario",usuario);
-		return nav;		
-	}*/
-	
-	/*Envio de la solicitud mediante el request para la obtencion del input*/
-	/*@GetMapping("/portada")
-	public String logeo(HttpServletRequest request, Model model) {
-		String usuariologeo = request.getParameter("txtusuario");
-		model.addAttribute("usuariologin", usuariologeo);
-		return "Portada";
-	}*/
-	
-	@PostMapping("/login")
 	public String login(
 			@RequestParam(name="idusuario", required = false) String idusuario,			
 			@RequestParam(name="username", required = false) String username, Model model,
@@ -56,8 +43,7 @@ public class LoginController {
 		
 		if(Objects.nonNull(loginuser)) {
 			System.out.print("loginuser usuario id: "+loginuser.getIdusuario()+"\n");
-			System.out.print("loginuser correo: "+loginuser.getUsername()+"\n");
-			
+			System.out.print("loginuser correo: "+loginuser.getUsername()+"\n");			
 			model.addAttribute("idusuario", loginuser.getIdusuario());
 			model.addAttribute("username", loginuser.getUsername());
 			return "redirect:/shop";
@@ -65,7 +51,7 @@ public class LoginController {
 		else{
 			return "redirect:/login";
 		}
-	}		
+	}*/
 	
 	
 	@RequestMapping(value = {"/logout"}, method = RequestMethod.POST)
