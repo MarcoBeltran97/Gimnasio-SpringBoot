@@ -1,5 +1,7 @@
-<<<<<<< HEAD
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Enum"><rhs name\="javax.persistence.GenerationType"/><rhs name\="org.springframework.web.bind.annotation.RequestMethod"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="javax.persistence.GenerationType"/><rhs name\="org.springframework.web.bind.annotation.RequestMethod"/><rhs name\="java.lang.Double"/></lhs><lhs name\="org.springframework.web.servlet.ModelAndView"><rhs name\="org.springframework.web.servlet.ModelAndView"/></lhs><lhs name\="com.init.gimnasio.modelo.Producto"><rhs name\="com.init.gimnasio.modelo.Producto"/></lhs><lhs name\="java.lang.Exception"><rhs name\="java.io.IOException"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="java.io.IOException"/></lhs><lhs name\="java.io.IOException"><rhs name\="java.io.IOException"/></lhs><lhs name\="java.lang.constant.ConstantDesc"><rhs name\="java.lang.Double"/></lhs><lhs name\="java.lang.Number"><rhs name\="java.lang.Double"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.Date"/></lhs><lhs name\="java.util.Date"><rhs name\="java.util.Date"/></lhs><lhs name\="java.time.temporal.TemporalAccessor"><rhs name\="java.time.LocalDateTime"/></lhs></history>
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=a233689389d1144e4f7249b103394cf42e7c7698
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Enum"><rhs name\="javax.persistence.GenerationType"/><rhs name\="org.springframework.web.bind.annotation.RequestMethod"/><rhs name\="javax.persistence.ParameterMode"/><rhs name\="org.springframework.http.HttpStatus"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="javax.persistence.GenerationType"/><rhs name\="org.springframework.web.bind.annotation.RequestMethod"/><rhs name\="java.lang.Double"/><rhs name\="javax.persistence.ParameterMode"/><rhs name\="org.springframework.http.HttpStatus"/></lhs><lhs name\="org.springframework.web.servlet.ModelAndView"><rhs name\="org.springframework.web.servlet.ModelAndView"/></lhs><lhs name\="com.init.gimnasio.modelo.Producto"><rhs name\="com.init.gimnasio.modelo.Producto"/></lhs><lhs name\="java.lang.Exception"><rhs name\="java.io.IOException"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="java.io.IOException"/></lhs><lhs name\="java.io.IOException"><rhs name\="java.io.IOException"/></lhs><lhs name\="java.lang.constant.ConstantDesc"><rhs name\="java.lang.Double"/></lhs><lhs name\="java.lang.Number"><rhs name\="java.lang.Double"/></lhs></history>
 content_assist_number_of_computers=15
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
@@ -10,14 +12,3 @@ org.eclipse.jdt.ui.formatterprofiles.version=21
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true
-=======
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Enum"><rhs name\="javax.persistence.GenerationType"/><rhs name\="org.springframework.web.bind.annotation.RequestMethod"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="javax.persistence.GenerationType"/><rhs name\="org.springframework.web.bind.annotation.RequestMethod"/><rhs name\="java.lang.Double"/></lhs><lhs name\="org.springframework.web.servlet.ModelAndView"><rhs name\="org.springframework.web.servlet.ModelAndView"/></lhs><lhs name\="com.init.gimnasio.modelo.Producto"><rhs name\="com.init.gimnasio.modelo.Producto"/></lhs><lhs name\="java.lang.Exception"><rhs name\="java.io.IOException"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="java.io.IOException"/></lhs><lhs name\="java.io.IOException"><rhs name\="java.io.IOException"/></lhs><lhs name\="java.lang.constant.ConstantDesc"><rhs name\="java.lang.Double"/></lhs><lhs name\="java.lang.Number"><rhs name\="java.lang.Double"/></lhs></history>
-content_assist_number_of_computers=15
-content_assist_proposals_background=255,255,255
-content_assist_proposals_foreground=0,0,0
-eclipse.preferences.version=1
-org.eclipse.jdt.ui.formatterprofiles.version=21
-spelling_locale_initialized=true
-useAnnotationsPrefPage=true
-useQuickDiffPrefPage=true
->>>>>>> a233689389d1144e4f7249b103394cf42e7c7698

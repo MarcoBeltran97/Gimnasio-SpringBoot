@@ -5,6 +5,8 @@ import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
 
+import javax.persistence.EntityManager;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -12,10 +14,13 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.init.gimnasio.interfaces.IProducto;
 import com.init.gimnasio.interfazServicio.IProductoService;
+import com.init.gimnasio.modelo.DetalleCompra;
 import com.init.gimnasio.modelo.Producto;
 
 @Service
 public class ProductoService implements IProductoService {
+	//Para listar el procedimiento almacenado
+	
 	
 	@Autowired
 	private IProducto iproducto;
@@ -68,6 +73,5 @@ public class ProductoService implements IProductoService {
 		
 		iproducto.save(p);
 
-	}
-
+	}	
 }

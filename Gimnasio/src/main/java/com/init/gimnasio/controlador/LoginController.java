@@ -39,6 +39,14 @@ public class LoginController {
 		return nav;		
 	}*/
 	
+	/*Envio de la solicitud mediante el request para la obtencion del input*/
+	/*@GetMapping("/portada")
+	public String logeo(HttpServletRequest request, Model model) {
+		String usuariologeo = request.getParameter("txtusuario");
+		model.addAttribute("usuariologin", usuariologeo);
+		return "Portada";
+	}*/
+	
 	@PostMapping("/login")
 	public String login(
 			@RequestParam(name="idusuario", required = false) String idusuario,			

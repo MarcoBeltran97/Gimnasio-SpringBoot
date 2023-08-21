@@ -1,0 +1,32 @@
+package com.init.gimnasio.interfaces;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+
+import com.init.gimnasio.modelo.DetalleCompra;
+
+@Repository
+public interface IDetalleCompra extends CrudRepository<DetalleCompra, Integer> {
+	
+	public interface detallecompra_idcli{
+		int getiddetallecompra();
+		int getidusuario();
+		String gettipoproducto();
+		String getnombreproducto();
+		String getdescripcion();
+		double getpreciouni();
+		int getcantidad();
+		double getmontototal();
+		String getfecha();
+		
+	}
+
+	//Listar por ID
+	@Query(value = "{CALL sp_detalle_compra_idcli (:idusu)}", nativeQuery = true)
+	List<detallecompra_idcli> detallecompraListarIdSP(@Param("idusu") int idusu);
+}

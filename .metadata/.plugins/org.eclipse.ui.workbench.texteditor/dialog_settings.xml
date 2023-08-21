@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Añadir"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="controllerMarco2"/>
+			<item value="detallecompraListarIdSP"/>
+			<item value="listarDetalleCompraId"/>
+			<item value="servicioMarco"/>
+			<item value="controllerMarco"/>
+			<item value="controller"/>
+			<item value="detalle_compra_sp"/>
+			<item value="detalle_compra_controller"/>
+			<item value="eliminarProducto"/>
+			<item value="/*"/>
 			<item value="añadir"/>
 			<item value="producto"/>
 			<item value="productoclienteservice"/>
 			<item value="guardarDetalleCompra"/>
 			<item value="productoscliente"/>
-			<item value="Añadir al Carrito"/>
-			<item value="producto_cliente"/>
-			<item value="function eliminar(id){"/>
-			<item value="======="/>
-			<item value="Lobster"/>
-			<item value="DetalleCompra"/>
-			<item value="input_id"/>
-			<item value="txtprecio_uni"/>
-			<item value="txttipo_producto"/>
-			<item value="tipo_producto"/>
 		</list>
 		<list key="replacehistory">
 			<item value="detalle_compra"/>

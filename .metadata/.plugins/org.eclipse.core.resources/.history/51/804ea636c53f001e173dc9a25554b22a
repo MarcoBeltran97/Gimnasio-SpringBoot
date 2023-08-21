@@ -1,0 +1,14 @@
+package com.init.gimnasio.modelo;
+
+public class DetalleCompraCarrito {
+	private int iddetallecompra;
+	private int idusuario;
+	private String tipo_producto;
+	private String nombre_producto;
+	private String descripcion;
+	private double precio_uni;
+	private int cantidad;
+	private double monto_total;
+	private String fecha;
+
+}

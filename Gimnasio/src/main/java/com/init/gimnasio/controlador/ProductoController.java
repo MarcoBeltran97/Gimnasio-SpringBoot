@@ -3,6 +3,8 @@ package com.init.gimnasio.controlador;
 import java.util.List;
 import java.util.Optional;
 
+import javax.persistence.EntityManager;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,33 +20,35 @@ import com.init.gimnasio.interfazServicio.IProductoService;
 import com.init.gimnasio.modelo.Producto;
 import com.init.gimnasio.modelo.DetalleCompra;
 import com.init.gimnasio.servicio.DetalleCompraService;
+import com.init.gimnasio.servicio.ProductoService;
 
 @Controller
 @RequestMapping
 public class ProductoController {
 	
 	@Autowired
-	private IProductoService service;
+	private ProductoService s_producto;
+	
+	@Autowired
+	private IProductoService i_productoservice;
 	
 	@Autowired
 	private DetalleCompraService productocliservice;
 	
-	@Autowired
-	private IDetalleCompraService i_detallecompra;
 	
-	@GetMapping("/carrito")
-	public String listar(Model model) {
-		List<DetalleCompra>detalle_compra=i_detallecompra.listarDetalleCompra();
-		model.addAttribute("detalle_compra_controller", detalle_compra);
-		return "Carrito";
-	}
+	
+	
+	
+	
 	
 	@GetMapping("/shop")
 	public String agregar(Model model) {
-		List<Producto>productos=service.listar();
+		List<Producto>productos=i_productoservice.listar();
 		model.addAttribute("producto_controller", productos);
 		return "Productos";
 	}
+	
+	
 	
 	
 	/*@PostMapping("/save")
@@ -53,15 +57,7 @@ public class ProductoController {
 		return "redirect:/carrito";
 	}*/
 	
-	/**/
 	
-	@PostMapping("/save")
-	public String save(@Validated DetalleCompra c, Model model) {
-		i_detallecompra.saveproducto(c);
-		return "redirect:/carrito";
-	}
-	
-	/**/
 	/*Mediante los name del input, enviamos cada registro ingresado para luego enviarlo a la funcion de Producto Service*/
 	
 	@PostMapping("/saveproducto")
@@ -82,27 +78,8 @@ public class ProductoController {
 	
 	@PostMapping("/shop")
 	public String save(@Validated Producto p, Model model) {
-		service.save(p);
+		i_productoservice.save(p);
 		return "redirect:/shop";
 	}
 	
-	/**/
-	@GetMapping("/update")
-	public String listarProducto(Model model) {
-		return "Update";
-	}
-	
-	@GetMapping("/editar/{id}")
-	public String editarCliente(@PathVariable int id, Model model) {
-		Optional<DetalleCompra>productoCliente = i_detallecompra.listarProductoId(id);
-		model.addAttribute("producto_cliente", productoCliente);
-		return "Update";
-	}
-	
-	@GetMapping("/delete/{id}")
-	public String delete(Model model, @PathVariable int id) {
-		i_detallecompra.deleteproducto(id);
-		return "redirect:/carrito";
-	}
-
 }

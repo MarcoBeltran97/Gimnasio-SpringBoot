@@ -1,0 +1,17 @@
+package com.init.gimnasio.interfaces;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.init.gimnasio.modelo.DetalleCompra;
+
+@Repository
+public interface IDetalleCompra extends CrudRepository<DetalleCompra, Integer> {
+
+	//Listar por ID
+	@Query(value = "{CALL sp_detalle_compra_idcli (1)}", nativeQuery = true)
+	List<DetalleCompra> detallecompraListarSP();
+}

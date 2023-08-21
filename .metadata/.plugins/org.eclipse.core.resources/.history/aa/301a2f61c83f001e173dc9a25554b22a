@@ -1,0 +1,5 @@
+package com.init.gimnasio.interfaces;
+
+public interface IDetalleCompraCarrito {
+
+}

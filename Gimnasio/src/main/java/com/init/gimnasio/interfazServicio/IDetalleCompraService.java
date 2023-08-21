@@ -6,10 +6,11 @@ import java.util.Optional;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.init.gimnasio.modelo.DetalleCompra;
+import com.init.gimnasio.modelo.DetalleCompraCarrito;
 
 public interface IDetalleCompraService {
 	public List<DetalleCompra> listarDetalleCompra();
-	public Optional<DetalleCompra> listarProductoId(int id);
+	public List<DetalleCompraCarrito> listarDetalleCompraId(int id);
 	public int saveproducto(DetalleCompra p);
 	public void deleteproducto(int id);
 	

@@ -5,28 +5,43 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Optional;
 
+import javax.persistence.EntityManager;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.init.gimnasio.interfaces.IDetalleCompra;
+import com.init.gimnasio.interfaces.IDetalleCompraCarrito;
 import com.init.gimnasio.interfazServicio.IDetalleCompraService;
 import com.init.gimnasio.modelo.DetalleCompra;
+import com.init.gimnasio.modelo.DetalleCompraCarrito;
 
 @Service
 public class DetalleCompraService implements IDetalleCompraService {
-
+	
+	private DetalleCompraCarrito dcc;
+	
 	@Autowired
 	private IDetalleCompra iproductocliente;
+	
+	@Autowired
+	private IDetalleCompraCarrito i_dcc;
 	
 	@Override
 	public List<DetalleCompra> listarDetalleCompra() {
 		return (List<DetalleCompra>)iproductocliente.findAll();
 	}
+	
+	//Listar por ID
+	public List<DetalleCompraCarrito> listarDetalleCompraId(int id) {
+		System.out.println("servicioMarco: "+id);
+		return i_dcc.detallecompraListarIdSP(id);
+	}
 
-	@Override
+	/*@Override
 	public Optional<DetalleCompra> listarProductoId(int id) {
 		return iproductocliente.findById(id);
-	}
+	}*/
 
 	@Override
 	public int saveproducto(DetalleCompra p) {
