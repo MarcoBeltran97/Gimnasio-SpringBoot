@@ -11,6 +11,7 @@ import com.init.gimnasio.modelo.DetalleCompraCarrito;
 public interface IDetalleCompraService {
 	public List<DetalleCompra> listarDetalleCompra();
 	public List<DetalleCompraCarrito> listarDetalleCompraId(int id);
+	Optional<DetalleCompraCarrito> listarEditDetalleCompraId(int id);
 	public int saveproducto(DetalleCompra p);
 	public void deleteproducto(int id);
 	

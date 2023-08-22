@@ -51,26 +51,28 @@
 			<table class="table">
 				<thead>
 					<tr>
-						<th>ID</th>
-						<th>USUARIO</th>
 						<th>PRODUCTO</th>
+						<th>NOMBRE</th>
+						<th>DETALLE</th>
+						<th>PRECIO</th>
 						<th>CANTIDAD</th>
-						<th>MONTO TOTAL</th>
+						<th>TOTAL</th>
 						<th>FECHA</th>
 						<th></th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr th:each="detalle_compra:${detalle_compra_controller}">
-						<td th:text="${detalle_compra.iddetallecompra}"></td>
-						<td th:text="${detalle_compra.idusuario}"></td>
-						<td th:text="${detalle_compra.idproducto}"></td>
-						<td th:text="${detalle_compra.cantidad}"></td>
-						<td th:text="${detalle_compra.monto_total}"></td>
-						<td th:text="${detalle_compra.fecha}"></td>
-						<td><a th:href="@{/editar/}+${detalle_compra.iddetallecompra}"
+					<tr th:each="detallecompracarrito:${detalle_compra_controller}">
+						<td th:text="${detallecompracarrito.tipo_producto}"></td>
+						<td th:text="${detallecompracarrito.nombre_producto}"></td>
+						<td th:text="${detallecompracarrito.descripcion}"></td>
+						<td th:text="${detallecompracarrito.precio_uni}"></td>
+						<td th:text="${detallecompracarrito.cantidad}"></td>
+						<td th:text="${detallecompracarrito.monto_total}"></td>
+						<td th:text="${detallecompracarrito.fecha}"></td>
+						<td><a th:href="@{/editar/}+${detallecompracarrito.iddetallecompra}"
 							class="btn btn-warning">EDITAR</a> <a
-							th:onclick="eliminarProducto([[${detalle_compra.iddetallecompra}]])"
+							th:onclick="eliminarProducto([[${detallecompracarrito.iddetallecompra}]])"
 							class="btn btn-danger">ELIMINAR</a></td>
 					</tr>
 				</tbody>

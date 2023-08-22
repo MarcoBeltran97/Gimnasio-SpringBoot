@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="DetalleCompraEdit"/>
 		<list key="findhistory">
+			<item value="DetalleCompraEdit"/>
+			<item value="DetalleCompraControllerEdit"/>
+			<item value="DetalleCompraControllerEdit2"/>
+			<item value="controllerMarco4"/>
+			<item value="producto_cliente"/>
+			<item value="listarDetalleCompraId"/>
+			<item value="detalle_compra.iddetallecompra"/>
+			<item value="pruebadListarcc"/>
+			<item value="detalle_compra_controller"/>
 			<item value="controllerMarco"/>
 			<item value="pruebadcc"/>
-			<item value="listarDetalleCompraId"/>
 			<item value="prueba6"/>
 			<item value="prueba"/>
 			<item value="956 104 920"/>
 			<item value="contacto"/>
-			<item value="Authentication auth = SecurityContextHolder.getContext().getAuthentication();"/>
-			<item value="mapearRolesAutorizacion"/>
-			<item value="loginuser2"/>
-			<item value="loginuser"/>
-			<item value="servicionull3"/>
-			<item value="servicionull4"/>
-			<item value="loginuser correo"/>
-			<item value="servicioMarco"/>
 		</list>
 		<list key="replacehistory">
 			<item value="detalle_compra"/>

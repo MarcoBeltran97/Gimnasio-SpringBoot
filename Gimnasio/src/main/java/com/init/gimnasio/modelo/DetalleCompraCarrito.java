@@ -2,8 +2,10 @@ package com.init.gimnasio.modelo;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "detallecompracarrito")
 public class DetalleCompraCarrito {
 	@Id
 	private int iddetallecompra;

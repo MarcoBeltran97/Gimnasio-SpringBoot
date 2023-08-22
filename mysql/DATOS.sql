@@ -28,7 +28,15 @@ SELECT iddetallecompra, idusuario, pro.tipo_producto, pro.nombre_producto, pro.d
 INNER JOIN producto pro ON dc.idproducto = pro.idproducto WHERE idusuario = idusu;
 DELIMITER ;
 
-
 CALL sp_detalle_compra_idcli (1);
+
+/*DELIMITER $$*/
+CREATE PROCEDURE sp_editar_compra_idcli (iddetalle int)
+SELECT iddetallecompra, idusuario, pro.tipo_producto, pro.nombre_producto, pro.descripcion, pro.precio_uni, cantidad, monto_total, fecha FROM detalle_compra dc
+INNER JOIN producto pro ON dc.idproducto = pro.idproducto WHERE iddetallecompra = iddetalle;
+DELIMITER ;
+
+CALL sp_editar_compra_idcli (7);
+
 
 update detalle_compra set idusuario=2 where iddetallecompra = 6

@@ -9,39 +9,43 @@
 	<div class="container mt-4">
 		<div class="col-sm-6">
 		
-		<form th:action="@{/save}" th:object=${producto_cliente} method="POST">
+		<form th:action="@{/save}" th:object=${editar_compra_controller} method="POST">
 			<div class="card">
 				<div class="card-header">
-					<h3>Modulo Cliente</h3>
+					<h3>Modulo Producto</h3>
 				</div>
 				<div class="card-body">
 					<div class="form-group">
 						<label>ID</label>
-						<input th:field="*{idproductocliente}" type="text" class="form-control" readonly="readonly">
+						<input th:field="*{iddetallecompra}" type="text" class="form-control" readonly="readonly">
 					</div>
 					<div class="form-group">
-						<label>PRODUCTO</label>
+						<label>Producto</label>
 						<input th:field="*{tipo_producto}" type="text" class="form-control" readonly="readonly">
 					</div>
 					<div class="form-group">
-						<label>NOMBRE PRODUCTO</label>
+						<label>Nombre</label>
 						<input th:field="*{nombre_producto}" type="text" class="form-control" readonly="readonly">
 					</div>
 					<div class="form-group">
-						<label>DESCRIPCIÓN</label>
+						<label>Detalle</label>
 						<input th:field="*{descripcion}" type="text" class="form-control" readonly="readonly">
 					</div>
 					<div class="form-group">
-						<label>PRECIO UNITARIO</label>
+						<label>Precio</label>
 						<input th:field="*{precio_uni}" type="text" id="pre" class="form-control" readonly="readonly">
 					</div>
 					<div class="form-group">
-						<label>CANTIDAD</label>
+						<label>Cantidad</label>
 						<input th:field="*{cantidad}" min="1" type="number" id="cant" oninput="calcular()" class="form-control">
 					</div>
 					<div class="form-group">
-						<label>PRECIO TOTAL</label>
+						<label>Total</label>
 						<input th:field="*{monto_total}" type="text" id="tot" class="form-control" readonly="readonly">
+					</div>
+					<div class="form-group">
+						<label>Fecha</label>
+						<input th:field="*{fecha}" type="text" id="tot" class="form-control" readonly="readonly">
 					</div>
 				</div>
 				<div class="card-footer">

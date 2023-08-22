@@ -46,24 +46,59 @@ public class DetalleCompraController {
 	}*/
 		
 	
-	/*@GetMapping("/editar/{id}")
-	public String editarCliente(@PathVariable int id, Model model) {
-		Optional<DetalleCompra>productoCliente = i_detallecompra.listarProductoId(id);
-		model.addAttribute("producto_cliente", productoCliente);
+	@GetMapping("/editar/{id}")
+	public String editarCompra(@PathVariable int id, Model model) {
+		System.out.println("DetalleCompraControllerEdit "+id);
+		Optional<DetalleCompraCarrito>editarcompra = s_detallecompra.listarEditDetalleCompraId(id);
+		System.out.println("DetalleCompraControllerEdit2 "+id);
+		model.addAttribute("editar_compra_controller", editarcompra);
+		System.out.println("controllerMarco4: "+editarcompra.get().getIddetallecompra());
+		System.out.println("controllerMarco4: "+editarcompra.get().getIdusuario());
+		System.out.println("controllerMarco4: "+editarcompra.get().getTipo_producto());
+		System.out.println("controllerMarco4: "+editarcompra.get().getNombre_producto());
+		System.out.println("controllerMarco4: "+editarcompra.get().getDescripcion());
+		System.out.println("controllerMarco4: "+editarcompra.get().getPrecio_uni());
+		System.out.println("controllerMarco4: "+editarcompra.get().getCantidad());
+		System.out.println("controllerMarco4: "+editarcompra.get().getMonto_total());
+		System.out.println("controllerMarco4: "+editarcompra.get().getFecha());
 		return "Update";
-	}*/
+	}
+	
+	
+	/*FUNCIONAL JSON*/
+	//@GetMapping("/carrito")
+	//public ResponseEntity<DetalleCompra> viewId(){
+		//System.out.println("controllerMarco");
+		//Obtendremos el id del cliente
+		//Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		//Login appUser = repo.findByUsername(auth.getName()).orElseThrow(() -> new UsernameNotFoundException("No existe usuario")); //Usar
+		//auth.getName();
+		//System.out.println("pruebadcc: "+auth.getName());
+		//List<DetalleCompraCarrito> detallecompra = s_detallecompra.listarDetalleCompraId(appUser.getIdusuario());		
+		//System.out.println("controllerMarco3: "+detallecompra);
+		//return new ResponseEntity(detallecompra, HttpStatus.OK);
+	//}
 	
 	@GetMapping("/carrito")
-	public ResponseEntity<DetalleCompra> viewId(){
-		System.out.println("controllerMarco");
+	public String Listar (Model model){
+		System.out.println("controllerMarco");		
 		//Obtendremos el id del cliente
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		Login appUser = repo.findByUsername(auth.getName()).orElseThrow(() -> new UsernameNotFoundException("No existe usuario")); //Usar
 		auth.getName();
 		System.out.println("pruebadcc: "+auth.getName());
-		List<DetalleCompraCarrito> detallecompra = s_detallecompra.listarDetalleCompraId(appUser.getIdusuario());
-		System.out.println("controllerMarco2: "+detallecompra);
-		return new ResponseEntity(detallecompra, HttpStatus.OK);
+		List<DetalleCompraCarrito> detallecompra = s_detallecompra.listarDetalleCompraId(appUser.getIdusuario());		
+		model.addAttribute("detalle_compra_controller", detallecompra);
+		System.out.println("controllerMarco3: "+detallecompra.get(0).getIddetallecompra());
+		System.out.println("controllerMarco3: "+detallecompra.get(0).getIdusuario());
+		System.out.println("controllerMarco3: "+detallecompra.get(0).getTipo_producto());
+		System.out.println("controllerMarco3: "+detallecompra.get(0).getNombre_producto());
+		System.out.println("controllerMarco3: "+detallecompra.get(0).getDescripcion());
+		System.out.println("controllerMarco3: "+detallecompra.get(0).getPrecio_uni());
+		System.out.println("controllerMarco3: "+detallecompra.get(0).getCantidad());
+		System.out.println("controllerMarco3: "+detallecompra.get(0).getMonto_total());
+		System.out.println("controllerMarco3: "+detallecompra.get(0).getFecha());
+		return "Carrito";
 	}
 	
 	

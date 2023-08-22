@@ -38,11 +38,6 @@ public class DetalleCompraService implements IDetalleCompraService {
 		return i_dcc.detallecompraListarIdSP(id);
 	}
 
-	/*@Override
-	public Optional<DetalleCompra> listarProductoId(int id) {
-		return iproductocliente.findById(id);
-	}*/
-
 	@Override
 	public int saveproducto(DetalleCompra p) {
 		int res = 0;
@@ -77,6 +72,17 @@ public class DetalleCompraService implements IDetalleCompraService {
 		
 		iproductocliente.save(p);
 
+	}
+
+	/*@Override
+	public Optional<DetalleCompra> listarProductoId(int id) {
+		return iproductocliente.findById(id);
+	}*/
+	
+	@Override
+	public Optional<DetalleCompraCarrito> listarEditDetalleCompraId(int id) {
+		System.out.println("DetalleCompraEdit "+id);
+		return i_dcc.editarcompraListarIdSP(id);
 	}
 
 }
