@@ -3,6 +3,7 @@ package com.init.gimnasio.servicio;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,7 @@ public class LoginService implements UserDetailsService {
 		Login usuarioservice = repo.findByUsernameAndPassword(usu, pass);
 		return usuarioservice;
 	}
-	
+		
 	public LoginService(ILogin repo) {
 		super();
 		this.repo = repo;
@@ -44,6 +45,7 @@ public class LoginService implements UserDetailsService {
 		}
 		System.out.println("servicionull9: "+username);
 		UserDetails user = (UserDetails) new User(appUser.getUsername(), appUser.getPassword(), grantList);
+		System.out.println("servicionull10: "+appUser.getIdusuario());
 		System.out.println("servicionull10: "+appUser.getUsername());
 		System.out.println("servicionull11: "+appUser.getPassword());
 		System.out.println("servicionull12: "+grantList);

@@ -18,7 +18,7 @@ import javax.persistence.Table;
 public class Login {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long idusuario;
+	private int idusuario;
 	private String username;
 	private String password;
 	
@@ -35,17 +35,17 @@ public class Login {
 		super();
 	}
 	
-	public Login(Long idusuario, String username, String password) {
+	public Login(int idusuario, String username, String password) {
 		super();
 		this.idusuario = idusuario;
 		this.username = username;
 		this.password = password;
 	}
 	
-	public Long getIdusuario() {
+	public int getIdusuario() {
 		return idusuario;
 	}
-	public void setIdusuario(Long idusuario) {
+	public void setIdusuario(int idusuario) {
 		this.idusuario = idusuario;
 	}
 	public String getUsername() {

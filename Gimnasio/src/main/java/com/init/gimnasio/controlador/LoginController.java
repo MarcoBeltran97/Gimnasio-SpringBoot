@@ -29,7 +29,7 @@ public class LoginController {
 	@GetMapping("/login")
 	public String login (Model model) {
 		model.addAttribute("usuario", new Login());
-		System.out.print("map: /Login");
+		System.out.print("map: /login");
 		return "login";
 	}	
 	

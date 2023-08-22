@@ -6,6 +6,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
@@ -14,15 +17,20 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.init.gimnasio.interfaces.ILogin;
 import com.init.gimnasio.interfazServicio.IDetalleCompraService;
 import com.init.gimnasio.modelo.DetalleCompra;
 import com.init.gimnasio.modelo.DetalleCompraCarrito;
+import com.init.gimnasio.modelo.Login;
 import com.init.gimnasio.servicio.DetalleCompraService;
 
 @Controller
 @RequestMapping
 public class DetalleCompraController {
-		
+	
+	@Autowired
+	private ILogin repo;
+	
 	@Autowired
 	private DetalleCompraService s_detallecompra;	
 	
@@ -30,12 +38,12 @@ public class DetalleCompraController {
 	private IDetalleCompraService i_detallecompra;
 	
 	//Listado de carrito de compra funcional
-	@GetMapping("/carrito")
+	/*@GetMapping("/carrito")
 	public String listar(Model model) {
 		List<DetalleCompra>detalle_compra=i_detallecompra.listarDetalleCompra();
 		model.addAttribute("detalle_compra_controller", detalle_compra);
 		return "Carrito";
-	}
+	}*/
 		
 	
 	/*@GetMapping("/editar/{id}")
@@ -45,10 +53,15 @@ public class DetalleCompraController {
 		return "Update";
 	}*/
 	
-	@GetMapping("/carrito/{id}")
-	public ResponseEntity<DetalleCompra> viewId(@PathVariable("id") int id){
-		System.out.println("controllerMarco: "+id);
-		List<DetalleCompraCarrito> detallecompra = s_detallecompra.listarDetalleCompraId(id);
+	@GetMapping("/carrito")
+	public ResponseEntity<DetalleCompra> viewId(){
+		System.out.println("controllerMarco");
+		//Obtendremos el id del cliente
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		Login appUser = repo.findByUsername(auth.getName()).orElseThrow(() -> new UsernameNotFoundException("No existe usuario")); //Usar
+		auth.getName();
+		System.out.println("pruebadcc: "+auth.getName());
+		List<DetalleCompraCarrito> detallecompra = s_detallecompra.listarDetalleCompraId(appUser.getIdusuario());
 		System.out.println("controllerMarco2: "+detallecompra);
 		return new ResponseEntity(detallecompra, HttpStatus.OK);
 	}
