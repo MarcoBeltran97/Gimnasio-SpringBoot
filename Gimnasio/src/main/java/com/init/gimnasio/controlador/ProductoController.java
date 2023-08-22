@@ -6,6 +6,8 @@ import java.util.Optional;
 import javax.persistence.EntityManager;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
@@ -36,14 +38,12 @@ public class ProductoController {
 	private DetalleCompraService productocliservice;
 	
 	
-	
-	
-	
-	
-	
 	@GetMapping("/shop")
 	public String agregar(Model model) {
 		List<Producto>productos=i_productoservice.listar();
+		/*Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		auth.getName();
+		System.out.println("prueba: "+auth.getPrincipal());*/
 		model.addAttribute("producto_controller", productos);
 		return "Productos";
 	}

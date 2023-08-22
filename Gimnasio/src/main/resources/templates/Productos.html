@@ -20,10 +20,9 @@
 <title>Productos</title>
 </head>
 <body>
-	<div>
-	<!-- 
-		<h1>Bienvenido <span th:text="${usuario.username}"></span></h1>  -->
-		</div>
+<div sec:authorize="isAuthenticated()">
+    <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]</h1>
+</div>
 <div><a href="/portada">Contissssssnue</a></div>
 
 	<!-- START HEADER -->
@@ -71,16 +70,26 @@
                             <a class="btn text-dark" href="Carrito.jsp" tabindex="-1" aria-disabled="true">
                                 <i class="fas fa-shopping-cart "> Ofertas</i>
                             </a>
-                        </li>
-        
+                        </li>        
                         <li>
                             <div class="header-support-inner d-flex" >
-                                <div class="support-icon mx-1">
-                               <img src="../images/headsphone.png" alt="">
-                            </div
-                            ><div class="support-info"><div class="support-number"><strong>Pedidos</strong> 956 104 920</div><div class="support-email">Email: contacto@powergym.pe</div>
-                        </div>
-                    </div>
+                            	<div class="support-icon mx-1">
+                            		<img src="../images/headsphone.png" alt="">
+                            	</div>
+                            	<div class="support-info"><div class="support-number"><strong>Pedidos</strong> 901 545 198</div>
+                            	<div class="support-email">Email: marcobeltran97@gmail.com</div>
+		                        </div>
+		                    </div>
+                        </li>
+                        <li class="nav-item me-2">
+                        	<div class="comboSelectPro">
+                        		<select onchange="window.location.href=this.value">
+                        			<option hidden="selected" class="optionSelectPro" value="">[[${#httpServletRequest.remoteUser}]]</option>
+                        			<option value="/carrito" class="optionSelectPro">Mi Carrito</option>
+                        			<option class="optionSelectPro">Configuración</option>
+                        			<option class="/logout">Cerrar Sesión</option>
+                        		</select>
+                        	</div>
                         </li>
                     </ul>
                    

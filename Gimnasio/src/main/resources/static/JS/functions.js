@@ -65,3 +65,14 @@ function calcular(){
     }catch (e) {        
     }
 }
+
+/*Para select url*/
+function la(src)
+{
+  window.location=src;
+}
+/*Para select url, forma 2*/
+function handleSelect(elm)
+{
+    window.location = elm.value;
+}

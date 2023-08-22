@@ -6,8 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="mapearRolesAutorizacion"/>
+		<item key="selection" value="956 104 920"/>
 		<list key="findhistory">
+			<item value="956 104 920"/>
+			<item value="contacto"/>
+			<item value="prueba"/>
+			<item value="Authentication auth = SecurityContextHolder.getContext().getAuthentication();"/>
 			<item value="mapearRolesAutorizacion"/>
 			<item value="loginuser2"/>
 			<item value="loginuser"/>
@@ -19,10 +23,6 @@
 			<item value="logeoByEmail"/>
 			<item value="loginController"/>
 			<item value="servicionull"/>
-			<item value="servicionull2"/>
-			<item value="controllerMarco2"/>
-			<item value="detallecompraListarIdSP"/>
-			<item value="listarDetalleCompraId"/>
 		</list>
 		<list key="replacehistory">
 			<item value="detalle_compra"/>
