@@ -13,4 +13,4 @@ Día 18/03/2022: Se implementa el CRUD para el carrito de compras.
 
 Día 21/08/2023: Inicio de sesión con Spring Security usando la BD y se implementa la encriptación para la contraseña.
 
-Día 22/08/2023: Se lista en el carrito los productos del cliente logeado (JSON).
+Día 22/08/2023: Se lista en el carrito el detalle de los productos del cliente logeado, también se lista en el formulario de Editar.
