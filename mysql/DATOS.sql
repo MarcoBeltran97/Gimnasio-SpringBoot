@@ -28,7 +28,7 @@ SELECT iddetallecompra, idusuario, pro.tipo_producto, pro.nombre_producto, pro.d
 INNER JOIN producto pro ON dc.idproducto = pro.idproducto WHERE idusuario = idusu;
 DELIMITER ;
 
-CALL sp_detalle_compra_idcli (1);
+CALL sp_detalle_compra_idcli (2);
 
 /*DELIMITER $$*/
 CREATE PROCEDURE sp_editar_compra_idcli (iddetalle int)
@@ -36,7 +36,40 @@ SELECT iddetallecompra, idusuario, pro.tipo_producto, pro.nombre_producto, pro.d
 INNER JOIN producto pro ON dc.idproducto = pro.idproducto WHERE iddetallecompra = iddetalle;
 DELIMITER ;
 
-CALL sp_editar_compra_idcli (7);
+CALL sp_editar_compra_idcli (26);
+
+/*DELIMITER $$*/
+CREATE PROCEDURE sp_monto_total_compra_idcli (idusu int)
+SELECT iddetallecompra, idusuario FROM detalle_compra WHERE iddetallecompra = idusu;
+DELIMITER ;
+
+CALL sp_monto_total_compra_idcli (1);
+
+/*DELIMITER $$*/
+CREATE PROCEDURE sp_eliminar_compra (iddc int)
+DELETE FROM detalle_compra WHERE iddetallecompra = iddc;
+DELIMITER ;
+
+CALL sp_eliminar_compra (5);
+
+/*DELIMITER $$*/
+CREATE PROCEDURE sp_update_compra (iddc int, cant int, montot decimal(10,2))
+UPDATE detalle_compra SET cantidad = cant, monto_total = montot WHERE iddetallecompra = iddc;
+DELIMITER ;
+
+CALL sp_update_compra (25, 4, 1500.05);
 
 
-update detalle_compra set idusuario=2 where iddetallecompra = 6
+SELECT * FROM usuario;
+SELECT * FROM producto;
+SELECT * FROM detalle_compra WHERE iddetallecompra = 3;
+SELECT * FROM usuarios_roles;
+
+
+/*DELIMITER prueba $$*/
+CREATE PROCEDURE sp_editar_compra_idcli2 (iddetalle int)
+SELECT * FROM detalle_compra WHERE iddetallecompra = iddetalle;
+DELIMITER ;
+
+CALL sp_editar_compra_idcli2 (25);
+

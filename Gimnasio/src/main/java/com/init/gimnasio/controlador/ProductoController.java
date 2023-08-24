@@ -61,17 +61,7 @@ public class ProductoController {
 		model.addAttribute("producto_controller", productos);
 		System.out.println("map: /shop");
 		return "Productos";
-	}
-	
-	
-	
-	
-	/*@PostMapping("/save")
-	public String save(@Validated ProductoCliente c, Model model) {
-		i_detallecompra.saveproducto(c);
-		return "redirect:/carrito";
-	}*/
-	
+	}	
 	
 	/*Mediante los name del input, enviamos cada registro ingresado para luego enviarlo a la funcion de Producto Service*/
 	
@@ -80,16 +70,11 @@ public class ProductoController {
 			@RequestParam("txtidproducto") int producto,
 			@RequestParam("txtprecio_uni_producto") double precio_unitario
 			)
-	{
+	{		
+		System.out.println("saveproductoController");
 		productocliservice.guardarDetalleCompra(1, producto, 1, precio_unitario, "");
 		return "redirect:/carrito";
 	}
-	/**/
-	/*@GetMapping("/shop")
-	public String agregar(Model model) {
-		model.addAttribute("producto", new Producto());
-		return "Productos";
-	}*/
 	
 	@PostMapping("/shop")
 	public String save(@Validated Producto p, Model model) {

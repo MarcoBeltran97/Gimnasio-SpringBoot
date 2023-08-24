@@ -8,18 +8,26 @@ import java.util.Optional;
 import javax.persistence.EntityManager;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.init.gimnasio.interfaces.IDetalleCompra;
 import com.init.gimnasio.interfaces.IDetalleCompraCarrito;
+import com.init.gimnasio.interfaces.ILogin;
 import com.init.gimnasio.interfazServicio.IDetalleCompraService;
 import com.init.gimnasio.modelo.DetalleCompra;
 import com.init.gimnasio.modelo.DetalleCompraCarrito;
+import com.init.gimnasio.modelo.Login;
 
 @Service
 public class DetalleCompraService implements IDetalleCompraService {
 	
 	private DetalleCompraCarrito dcc;
+	
+	@Autowired
+	private ILogin repo;
 	
 	@Autowired
 	private IDetalleCompra iproductocliente;
@@ -40,6 +48,7 @@ public class DetalleCompraService implements IDetalleCompraService {
 
 	@Override
 	public int saveproducto(DetalleCompra p) {
+		System.out.println("saveproductoDCS: "+p.getIddetallecompra());
 		int res = 0;
 		DetalleCompra producto = iproductocliente.save(p);
 		if(!producto.equals(null)) {
@@ -55,10 +64,13 @@ public class DetalleCompraService implements IDetalleCompraService {
 	
 	/*Empezamos a implementar el metodo donde recogeremos y enviaremos por parametro cada valor de la interfaz del producto servicio*/
 	public void guardarDetalleCompra(int usuario, int producto, int cantidad, double monto_total, String fecha) {
+		/*Para obtener el idcliente*/
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		Login appUser = repo.findByUsername(auth.getName()).orElseThrow(() -> new UsernameNotFoundException("No existe usuario")); //Usar
 		
 		DetalleCompra p = new DetalleCompra();
-		
-		p.setIdusuario(1);
+		System.out.println("saveproductoService: "+appUser.getIdusuario());
+		p.setIdusuario(appUser.getIdusuario());
 		p.setIdproducto(producto);
 		p.setCantidad(1);
 		p.setMonto_total(monto_total);
@@ -73,16 +85,34 @@ public class DetalleCompraService implements IDetalleCompraService {
 		iproductocliente.save(p);
 
 	}
-
-	/*@Override
-	public Optional<DetalleCompra> listarProductoId(int id) {
-		return iproductocliente.findById(id);
-	}*/
+	
+	@Override
+	public boolean updatecompraSP(int id, int cant, double montot) {
+		System.out.println("UpdateDetalleCompraEdit2 "+id);
+		try {
+			iproductocliente.updatecompraSP(id, cant, montot);
+			System.out.println("updatecompraSP "+id);
+			System.out.println("updatecompraSP "+cant);
+			System.out.println("updatecompraSP "+montot);
+			return true;
+		} catch (Exception e) {
+			System.out.println("UpdateDetalleError "+e.getMessage());
+		}
+		return false;
+	}
+	/**/
 	
 	@Override
 	public Optional<DetalleCompraCarrito> listarEditDetalleCompraId(int id) {
 		System.out.println("DetalleCompraEdit "+id);
 		return i_dcc.editarcompraListarIdSP(id);
+	}
+	
+	//Monto total a pagar de todo los productos
+	@Override
+	public Optional<DetalleCompraCarrito> viewMontoTotalDetalleCompraId(int id) {
+		System.out.println("DetalleCompraMontoTotal "+id);
+		return i_dcc.montototalcompraclienteIdSP(id);
 	}
 
 }

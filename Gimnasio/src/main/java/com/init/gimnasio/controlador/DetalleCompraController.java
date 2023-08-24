@@ -15,6 +15,8 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.init.gimnasio.interfaces.ILogin;
@@ -64,7 +66,6 @@ public class DetalleCompraController {
 		return "Update";
 	}
 	
-	
 	/*FUNCIONAL JSON*/
 	//@GetMapping("/carrito")
 	//public ResponseEntity<DetalleCompra> viewId(){
@@ -81,7 +82,8 @@ public class DetalleCompraController {
 	
 	@GetMapping("/carrito")
 	public String Listar (Model model){
-		System.out.println("controllerMarco");		
+		System.out.println("controllerMarco");
+		
 		//Obtendremos el id del cliente
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		Login appUser = repo.findByUsername(auth.getName()).orElseThrow(() -> new UsernameNotFoundException("No existe usuario")); //Usar
@@ -98,16 +100,35 @@ public class DetalleCompraController {
 		System.out.println("controllerMarco3: "+detallecompra.get(0).getCantidad());
 		System.out.println("controllerMarco3: "+detallecompra.get(0).getMonto_total());
 		System.out.println("controllerMarco3: "+detallecompra.get(0).getFecha());
+		
+		//Mostramos el monto total del carrito
+		/*Optional<DetalleCompraCarrito> montototalcompra = s_detallecompra.viewMontoTotalDetalleCompraId(appUser.getIdusuario());
+		model.addAttribute("monto_total_carrito", montototalcompra);
+		System.out.println("controllerMarco5: "+montototalcompra);
+		System.out.println("controllerMarco5: "+montototalcompra.get().getMonto_total());*/
+		
 		return "Carrito";
 	}
 	
-	
+	@GetMapping("/monto")
+	public Optional<DetalleCompraCarrito> montototalcompra (Model model) {
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		Login appUser = repo.findByUsername(auth.getName()).orElseThrow(() -> new UsernameNotFoundException("No existe usuario")); //Usar
+		Optional<DetalleCompraCarrito> montototalcompra = s_detallecompra.viewMontoTotalDetalleCompraId(appUser.getIdusuario());
+		model.addAttribute("monto_total_carrito", montototalcompra);
+		System.out.println("controllerMarco5: "+montototalcompra);
+		System.out.println("controllerMarco5: "+montototalcompra.get().getMonto_total());
+		return s_detallecompra.viewMontoTotalDetalleCompraId(appUser.getIdusuario());
+	}	
 	
 	@PostMapping("/save")
-	public String save(@Validated DetalleCompra c, Model model) {
-		i_detallecompra.saveproducto(c);
+	public String update(@Validated DetalleCompra dc){
+		System.out.println("DetalleCompraupdate1 "+dc.getIddetallecompra());
+		System.out.println("DetalleCompraupdate2 "+dc.getCantidad());
+		System.out.println("DetalleCompraupdate3 "+dc.getMonto_total());
+		ResponseEntity.ok(i_detallecompra.updatecompraSP(dc.getIddetallecompra(), dc.getCantidad(), dc.getMonto_total()));
 		return "redirect:/carrito";
-	}
+	}	
 	
 	@GetMapping("/update")
 	public String listarProducto(Model model) {

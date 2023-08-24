@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="DetalleCompraEdit"/>
+		<item key="selection" value="saveproducto"/>
 		<list key="findhistory">
-			<item value="DetalleCompraEdit"/>
-			<item value="DetalleCompraControllerEdit"/>
-			<item value="DetalleCompraControllerEdit2"/>
+			<item value="saveproducto"/>
+			<item value="listarEditDetalleCompraId2"/>
 			<item value="controllerMarco4"/>
-			<item value="producto_cliente"/>
-			<item value="listarDetalleCompraId"/>
-			<item value="detalle_compra.iddetallecompra"/>
-			<item value="pruebadListarcc"/>
-			<item value="detalle_compra_controller"/>
-			<item value="controllerMarco"/>
-			<item value="pruebadcc"/>
-			<item value="prueba6"/>
-			<item value="prueba"/>
-			<item value="956 104 920"/>
-			<item value="contacto"/>
+			<item value="listarEditDetalleCompraId"/>
+			<item value="viewMontoTotalDetalleCompraId"/>
+			<item value="detallecompraListarIdSP"/>
+			<item value="editar_compra_controller"/>
+			<item value="saveproductoController"/>
+			<item value="DetalleCompraMontoTotal"/>
+			<item value="DetalleCompraCarrito"/>
+			<item value="montototalcompra2"/>
+			<item value="montototalcompra"/>
+			<item value="monto_total_carrito"/>
+			<item value="controllerMarco5"/>
+			<item value="DetalleCompraEdit"/>
 		</list>
 		<list key="replacehistory">
 			<item value="detalle_compra"/>
